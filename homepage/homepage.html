@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>花卉网 - 专注花卉种植及花卉养殖技术的花卉网站(护花网) - 花卉网</title>
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+
+	<link rel="stylesheet" href="css/homepage.css">
+	<script type="text/javascript" src="js/homepage.js"></script>
+    <link rel="shortcut icon" href=" images/bitbug_favicon.ico"/> 
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <!-- logo -->
+        <h1 class="logo">
+            <a href="http://www.aihuhua.com">花卉网</a>
+        </h1>
+        <!-- nav -->
+        <ul class="nav">    
+            <li class="focus"><a href="../homepage/homepage.html" target="_self">首页</a></li>      
+            <li><a href="../huahui/huahui.html" target="_self">花卉</a></li>               
+            <li><a href="../huhuashanzhuang/huhuashanzhuang.html" target="_self">护花山庄</a></li>  
+            <li><a href="../tuku/tuku.html" target="_self">图库</a></li> 
+            <li><a href="../diary/diary.html" target="_self">日记</a></li>   
+        </ul>
+        <div class="search">
+            <input type="text" class="input" value="搜索花名、帖子、用户" onfocus="this.value=''" onblur="this.value='搜索花名、帖子、用户'">
+            <input type="button" class="submit">
+        </div>
+        <!-- publish -->
+        <div class="publish">
+            <a class="add" href="http://www.aihuhua.com/riji/tianjia.html" title="发布养花日记">发布</a>
+        </div> 
+        <!-- login -->
+        <div class="login">
+            <a title="登录花卉网" rel="nofollow" class="diandl">登录</a>
+            <a title="注册花卉网用户" rel="nofollow" target="_blank" href="http://www.aihuhua.com/register/">注册</a>
+        </div>
+        <div class="dendl">
+            <div class="deng">
+                <label class="title">登录护花网</label> 
+                <a href="###" class="close">×</a> 
+            </div>
+            <div class="dengx">
+                <div class="dengx_z">
+                    <div class="title">用以下账号直接登录</div>
+                    <div class="list">
+                        <a href="http://www.aihuhua.com/index.php?app=public&amp;mod=Widget&amp;act=displayAddons&amp;type=qzone&amp;addon=Login&amp;hook=login_sync_other" rel="nofollow" title="QQ账号登录" class="qq" target="_blank">
+                            QQ账号登录
+                        </a>
+                        <a href="http://www.aihuhua.com/index.php?app=public&amp;mod=Widget&amp;act=displayAddons&amp;type=sina&amp;addon=Login&amp;hook=login_sync_other" rel="nofollow" title="新浪微博登录" class="sina" target="_blank">
+                            新浪微博登录
+                        </a>
+                        <a href="http://www.aihuhua.com/index.php?app=public&amp;mod=Widget&amp;act=displayAddons&amp;type=qq&amp;addon=Login&amp;hook=login_sync_other" rel="nofollow" title="腾讯微博登录" class="tqq" target="_blank">
+                            腾讯微博登录
+                        </a>
+                    </div>
+                    <!-- <div class="handy">
+                        <a href="http://www.aihuhua.com/index.php?app=public&amp;mod=Widget&amp;act=displayAddons&amp;type=taobao&amp;addon=Login&amp;hook=login_sync_other" rel="nofollow" title="淘宝账号" class="taobao" target="_blank">
+                            淘宝账号
+                        </a>
+                        <a href="http://www.aihuhua.com/index.php?app=public&amp;mod=Widget&amp;act=displayAddons&amp;type=renren&amp;addon=Login&amp;hook=login_sync_other" rel="nofollow" title="人人账号" class="renren" target="_blank">
+                            人人账号
+                        </a>
+                        <a href="http://www.aihuhua.com/index.php?app=public&amp;mod=Widget&amp;act=displayAddons&amp;type=douban&amp;addon=Login&amp;hook=login_sync_other" rel="nofollow" title="豆瓣账号" class="douban" target="_blank">
+                            豆瓣账号
+                        </a> 
+                          </div> -->
+                </div>
+                <div class="dengx_y">
+                    <p class="tip">
+                        还没有护花账号？
+                        <a href="http://www.aihuhua.com/register/" rel="nofollow" title="注册账号">立即注册</a>
+                    </p>
+                    <form id="quick_login_form" method="POST" action="http://www.aihuhua.com/index.php?app=public&amp;mod=Passport&amp;act=doLogin" onsubmit="return quicksubmit()">
+                        <div class="label">
+                            <label>邮箱</label>
+                            <div class="input"><input name="login_email" id="login_email" value="" class="text" type="text"></div>
+                        </div>
+                        <div class="label" style="height:65px">
+                            <label>密码</label>
+                            <div class="input">
+                                <input id="login_password" name="login_password" value="" class="text on" maxlength="20" type="password" onkeydown="if(event.keyCode==32){return false;}">
+                                <span class="lock">
+                                    <input type="checkbox" id="login_remeber" class="remember" checked="checked"> 记住我
+                                    <font class="line">|</font>
+                                    <a href="http://www.aihuhua.com/index.php?app=public&amp;mod=Passport&amp;act=findPassword" rel="nofollow" title="忘记密码">忘记密码？</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button type="submit" class="submit">登录</button>
+                        </div>
+                        <input type="hidden" name="__hash__" value="682264c33747798f90258a406e8bb8fb_e7346d66f5f474a391da3dc42e716346">
+                    </form>
+                </div>
+                <div class="dengx_x">
+                    <span>其它帐号登录：</span>
+                    <div class="third-party">
+                        <dl>
+                            <dd>
+                                <a href="http://www.aihuhua.com/index.php?app=public&amp;mod=Widget&amp;act=displayAddons&amp;type=sina&amp;addon=Login&amp;hook=login_sync_other" class="ico-sina" target="_blank" rel="nofollow"></a>
+                            </dd>
+                            <dd>
+                                <a href="http://www.aihuhua.com/index.php?app=public&amp;mod=Widget&amp;act=displayAddons&amp;type=qzone&amp;addon=Login&amp;hook=login_sync_other" class="ico-qzone" target="_blank" rel="nofollow"></a>
+                            </dd>
+                            <dd>
+                                <a href="http://www.aihuhua.com/index.php?app=public&amp;mod=Widget&amp;act=displayAddons&amp;type=qq&amp;addon=Login&amp;hook=login_sync_other" class="ico-qq" target="_blank" rel="nofollow"></a>
+                            </dd>
+                            <dd>
+                                <a href="http://www.aihuhua.com/index.php?app=public&amp;mod=Widget&amp;act=displayAddons&amp;type=renren&amp;addon=Login&amp;hook=login_sync_other" class="ico-renren" target="_blank" rel="nofollow"></a>
+                                <dd>
+                                    <a href="http://www.aihuhua.com/index.php?app=public&amp;mod=Widget&amp;act=displayAddons&amp;type=qq&amp;addon=Login&amp;hook=login_sync_other" class="ico-qq" target="_blank" rel="nofollow"></a>
+                                </dd>
+                            </dd>
+                            <dd>
+                                <a href="http://www.aihuhua.com/index.php?app=public&amp;mod=Widget&amp;act=displayAddons&amp;type=douban&amp;addon=Login&amp;hook=login_sync_other" class="ico-douban" target="_blank" rel="nofollow"></a>
+                            </dd>
+                            <dd>
+                                <a href="http://www.aihuhua.com/index.php?app=public&amp;mod=Widget&amp;act=displayAddons&amp;type=taobao&amp;addon=Login&amp;hook=login_sync_other" class="ico-taobao" target="_blank" rel="nofollow"></a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="dendlbj"></div>
+    </div>
+     <!-- main -->
+	<div class="main">
+	<!-- content -->
+		<div class="content">
+		    <!-- 焦点图 -->
+			<div class="focus">
+				<div class="shuffling">
+					<ul class="pic">
+						<li>
+                            <a href="http://www.aihuhua.com/wenzhang/yanghuazv.html">
+                               <img src="http://pic1.huashichang.com/2015/0430/22/5542406112138.jpg" />
+                            </a>
+                        </li>
+						<li>
+                            <a href="http://www.aihuhua.com/wenzhang/1156.html">
+                                <img src="http://pic1.huashichang.com/2014/1031/00/545264a95c89d.jpg"/>
+                            </a>
+                        </li>
+						<li>
+                            <a href="http://www.aihuhua.com/so/wenzhang-%E9%B2%9C%E8%8A%B1/">
+                                <img src="http://pic1.huashichang.com/2015/1105/23/563b7732c171a.jpg"/>
+                            </a>
+                        </li>	
+					</ul>
+					<div class="square">
+			        	<span class="curent">1</span>
+			        	<span>2</span>
+			        	<span>3</span>
+			        </div>
+		        </div>
+		    </div>
+		    <!-- hotlist -->
+            <div class="hotlist">
+	            <h2 title="百花齐放" class="title">
+	            	百花齐放
+	            </h2>
+	            <ul class="list">
+	            	<li class="shadow">
+				       <a href="http://www.aihuhua.com/huahui/changchunhua.html" class="img">
+				       	<img src="images/h1.jpg" alt="">
+				       </a>
+				       <a href="http://www.aihuhua.com/huahui/changchunhua.html" class="t">长春花</a>	
+  					   <span class="desk">长春花别名金盏草、四时春...</span>
+					</li>
+					<li class="shadow">
+				       <a href="http://www.aihuhua.com/huahui/lvluo.html" class="img">
+				       	<img src="images/h2.jpg" alt="">
+				       </a>
+				       <a href="http://www.aihuhua.com/huahui/changchunhua.html" class="t">绿萝</a>	
+  					   <span class="desk">绿萝又名黄金葛、魔...</span>
+					</li>
+					<li class="shadow">
+				       <a href="http://www.aihuhua.com/huahui/junzilan.html" class="img">
+				       	<img src="images/h3.jpg" alt="">
+				       </a>
+				       <a href="http://www.aihuhua.com/huahui/junzilan.html" class="t">君子兰</a>	
+  					   <span class="desk">君子兰是石蒜科君子兰属的...</span>
+					</li>
+					<li class="shadow">
+				       <a href="http://www.aihuhua.com/huahui/huayewannianqing.html" class="img">
+				       	<img src="images/h4.jpg" alt="">
+				       </a>
+				       <a href="http://www.aihuhua.com/huahui/huayewannianqing.html" class="t">花叶万年青</a>	
+  					   <span class="desk">花叶万年青又名黛粉叶，天...</span>
+					</li>
+					<li class="shadow">
+				       <a href="http://www.aihuhua.com/huahui/longtuzhu.html" class="img">
+				       	<img src="images/h5.jpg" alt="">
+				       </a>
+				       <a href="http://www.aihuhua.com/huahui/longtuzhu.html" class="t">龙吐珠</a>	
+  					   <span class="desk">龙吐珠又名珍珠宝莲，为马...</span>
+					</li>
+					<li class="shadow">
+				       <a href="http://www.aihuhua.com/huahui/fanxinghua.html" class="img">
+				       	<img src="images/h6.jpg" alt="">
+				       </a>
+				       <a href="http://www.aihuhua.com/huahui/fanxinghua.html" class="t">繁星花</a>	
+  					   <span class="desk">繁星花(学名：Penta...</span>
+					</li>
+	            </ul>
+            </div>
+            <!-- reclist -->
+            <div class="reclist">
+            	<h2 title="分花别类" class="title">
+            		分花别类
+            		<a href="http://www.aihuhua.com/baike/" class="">(更多)</a>	
+            	</h2>
+            	<div class="loop">
+        			<ul class="piclist">
+        				<li class="shadow">
+        					<h3>
+        						<a href="/hua/yaoyong/" title="垂吊类">垂吊类 • 千垂万碧 </a>
+        					</h3>
+        					<span>碧玉妆成一树高，万条垂下绿丝绦</span>
+        					<label class="img">
+        						<a href="http://www.aihuhua.com/huahui/dayediaolan.html">
+        							<img src="http://pic1.huashichang.com/2016/0827/22/57c1a93654c78_60_60.jpg" alt="大叶吊兰" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/qiancao.html">
+        							<img src="http://pic1.huashichang.com/2014/0915/10/541651b48bdaf_60_60.jpg" alt="茜草" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/yinghuihua.html">
+        							<img src="http://pic1.huashichang.com/2013/0917/22/52386b37f11da_60_60.jpg" alt="鹦喙花" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/tengqie.html">
+        							<img src="http://pic1.huashichang.com/2014/0417/14/534f75f83f786_60_60.jpg" alt="藤茄" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/caiyediaolan.html">
+        							<img src="http://pic1.huashichang.com/2016/0625/22/576e9abfeee78_60_60.jpg" alt="彩叶吊兰 width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/gouweihong.html">
+        							<img src="http://pic1.huashichang.com/2014/1223/09/5498cad0baa96_60_60.jpg" alt="狗尾红" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/huanliangcao.html">
+        							<img src="http://pic1.huashichang.com/2014/0210/10/52f832f74605f_60_60.jpg" alt="还亮草" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/manxingfenglinghua.html">
+        							<img src="http://pic1.huashichang.com/2016/1107/23/58209ce99fdfe_60_60.jpg" alt="蔓性风铃花" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/qianyediaolan.html">
+        							<img src="http://pic1.huashichang.com/2016/0413/22/570e523478865_60_60.jpg" alt="千叶吊兰" width="54px" hight="54px">
+        						</a>
+        					</label>
+        				</li>
+        				<li class="shadow">
+        					<h3>
+        						<a href="/hua/yaoyong/" title="节庆类">中草药类 • 采兰赠药</a>
+        					</h3>
+        					<span>故山多药物，胜概忆桃源</span>
+        					<label class="img">
+        						<a href="http://www.aihuhua.com/huahui/jinju.html">
+        							<img src="http://pic1.huashichang.com/2016/0812/06/57acf75345bb8_60_60.jpg" alt="金桔" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/lanshisuan.html">
+        							<img src="http://pic1.huashichang.com/2015/0608/22/5575a0cb9b1f4_60_60.jpg" alt="蓝石蒜" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/jinsulan.html">
+        							<img src="http://pic1.huashichang.com/2015/1202/23/565f09cd8f4e5_60_60.png" alt="金粟兰" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/qixinghua.html">
+        							<img src="http://pic1.huashichang.com/2016/0616/21/5762a94ff24bc_60_60.jpg" alt="七星花" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/xiaolihua.html">
+        							<img src="http://pic1.huashichang.com/2016/0505/22/572b5b617e496_60_60.jpg" alt="小丽花" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/shouanhong.html">
+        							<img src="http://pic1.huashichang.com/2016/0619/07/5765e04b01fb4_60_60.jpeg" alt="首案红" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/lvticao.html">
+        							<img src="http://pic1.huashichang.com/2015/0217/21/54e34432deadb_60_60.jpg" alt="驴蹄草" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/huangju.html">
+        							<img src="http://pic1.huashichang.com/2014/1026/12/544c777b58d80_60_60.jpg" alt="幌菊" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/huangqihuafengli.html">
+        							<img src="http://pic1.huashichang.com/2016/0121/21/56a0e2f9bccc2_60_60.jpg" alt="黄歧花凤梨" width="54px" hight="54px">
+        						</a>
+        					</label>
+        				</li>
+        				<li class="shadow">
+        					<h3>
+        						<a href="/hua/yaoyong/" title="盆栽类">盆栽类 • 花好盆圆 </a>
+        					</h3>
+        					<span>千片赤英霞灿灿，百枝绛点灯煌煌</span>
+        					<label class="img">
+        						<a href="http://www.aihuhua.com/huahui/helantie.html">
+        							<img src="http://pic1.huashichang.com/2016/1129/06/583ca9045b227_60_60.jpg" alt="荷兰铁" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/longzhuaye.html">
+        							<img src="http://pic1.huashichang.com/2016/1120/06/5830d32154152_60_60.jpg" alt="龙爪叶" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/baixuegongzhu.html">
+        							<img src="http://pic1.huashichang.com/2016/1118/06/582e2d763ef15_60_60.jpg" alt="白雪公主" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/heimeiren.html">
+        							<img src="http://pic1.huashichang.com/2016/1125/06/58377041a5069_60_60.jpg" alt="黑美人" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/zexie.html">
+        							<img src="http://pic1.huashichang.com/2016/1115/00/5829e365f1984_60_60.jpg" alt="泽泻" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/chaofengli.html">
+        							<img src="http://pic1.huashichang.com/2016/1201/22/58403a63517bf_60_60.jpg" alt="巢凤梨" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/yementie.html">
+        							<img src="http://pic1.huashichang.com/2016/1124/07/58362978a4f64_60_60.jpg" alt="也门铁" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/jinzuanmanlvrong.html">
+        							<img src="http://pic1.huashichang.com/2016/1124/22/5836fec23fc23_60_60.jpg" alt="金钻蔓绿绒" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/jinbianlongshelan.html">
+        							<img src="http://pic1.huashichang.com/2016/1129/05/583ca59d7ee2e_60_60.jpg" alt="金边龙舌兰" width="54px" hight="54px">
+        						</a>
+        					</label>
+        				</li>
+        				<li class="shadow">
+        					<h3>
+        						<a href="/hua/yaoyong/" title="节庆类">水培类 • 水性养花</a>
+        					</h3>
+        					<span>接天莲叶无穷碧，映日荷花别样红</span>
+        					<label class="img">
+        						<a href="http://www.aihuhua.com/huahui/baixuegongzhu.html">
+        							<img src="http://pic1.huashichang.com/2016/1118/06/582e2d763ef15_60_60.jpg" alt="白雪公主" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/shuibie.html">
+        							<img src="http://pic1.huashichang.com/2016/1119/06/582f7ef1a92c7_60_60.jpg" alt="水鳖" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/xinjinayafengxian.html">
+        							<img src="http://pic1.huashichang.com/2016/0805/23/57a4b33f010c9_60_60.jpg" alt="芦苇" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/luwei.html">
+        							<img src="http://pic1.huashichang.com/2016/0813/00/57adf5e4abd1d_60_60.jpg" alt="金钻蔓绿绒" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/jinzuanmanlvrong.html">
+        							<img src="http://pic1.huashichang.com/2016/1107/22/58209537b6167_60_60.jpg" alt="蟆叶秋海棠" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/hongshuilian.html">
+        							<img src="http://pic1.huashichang.com/2016/0823/23/57bc652502d34_60_60.jpg" alt="红睡莲" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/zhouyelengshuihua.html">
+        							<img src="http://pic1.huashichang.com/2016/1108/23/5821edc508cca_60_60.jpg" alt="皱叶冷水花" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/zhouyejiaocao.html">
+        							<img src="http://pic1.huashichang.com/2016/0906/23/57cede8e16446_60_60.jpg" alt="皱叶椒草" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/zhilibaibu.html">
+        							<img src="http://pic1.huashichang.com/2016/1101/06/5817cac2e0db1_60_60.jpg" alt="直立百部" width="54px" hight="54px">
+        						</a>
+        					</label>
+        				</li>
+                        <li class="shadow">
+                            <h3>
+                                <a href="/hua/shuipei/" title="节庆类">观叶类 • 枝繁叶茂</a>
+                            </h3>
+                            <span>停车坐爱枫林晚，霜叶红于二月花</span>
+                            <label class="img">
+                                <a href="http://www.aihuhua.com/huahui/jinzuanmanlvrong.html">
+                                    <img src="http://pic1.huashichang.com/2016/1124/22/5836fec23fc23_60_60.jpg" alt="金钻蔓绿绒" width="54px" hight="54px">
+                                </a>
+                                <a href="http://www.aihuhua.com/huahui/jinbianlongshelan.html">
+                                    <img src="http://pic1.huashichang.com/2016/1129/05/583ca59d7ee2e_60_60.jpg" alt="金边龙舌兰" width="54px" hight="54px">
+                                </a>
+                                <a href="http://www.aihuhua.com/huahui/zhilibaibu.html">
+                                    <img src="http://pic1.huashichang.com/2016/1101/06/5817cac2e0db1_60_60.jpg" alt="直立百部" width="54px" hight="54px">
+                                </a>
+                                <a href="http://www.aihuhua.com/huahui/heimeiren.html">
+                                    <img src="http://pic1.huashichang.com/2016/1125/06/58377041a5069_60_60.jpg" alt="黑美人" width="54px" hight="54px">
+                                </a>
+                                <a href="http://www.aihuhua.com/huahui/cigu.html">
+                                    <img src="http://pic1.huashichang.com/2016/1116/00/582b34bf43c07_60_60.jpg" alt="慈姑" width="54px" hight="54px">
+                                </a>
+                                <a href="http://www.aihuhua.com/huahui/yementie.html">
+                                    <img src="http://pic1.huashichang.com/2016/1124/07/58362978a4f64_60_60.jpg" alt="也门铁" width="54px" hight="54px">
+                                </a>
+                                <a href="http://www.aihuhua.com/huahui/helantie.html">
+                                    <img src="http://pic1.huashichang.com/2016/1129/06/583ca9045b227_60_60.jpg" alt="荷兰铁" width="54px" hight="54px">
+                                </a>
+                                <a href="http://www.aihuhua.com/huahui/shuibie.html">
+                                    <img src="http://pic1.huashichang.com/2016/1119/06/582f7ef1a92c7_60_60.jpg" alt="水鳖" width="54px" hight="54px">
+                                </a>
+                                <a href="http://www.aihuhua.com/huahui/chaofengli.html">
+                                    <img src="http://pic1.huashichang.com/2016/1201/22/58403a63517bf_60_60.jpg" alt="巢凤梨然果曾经皆为花，却非皆花都成果" width="54px" hight="54px">
+                                </a>
+                            </label>
+                        </li>
+        				<li class="shadow">
+        					<h3>
+        						<a href="/hua/guanguo/" title="节庆类">观果类 • 硕果累累 </a>
+        					</h3>
+        					<span>故然果曾经皆为花，却非皆花都成果</span>
+        					<label class="img">
+        						<a href="http://www.aihuhua.com/huahui/jiegumu.html">
+        							<img src="http://pic1.huashichang.com/2016/0718/21/578cd5c887f95_60_60.jpg" alt="接骨木" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/qiduzao.html">
+        							<img src="http://pic1.huashichang.com/2016/0126/22/56a77db09b234_60_60.jpg" alt="七度灶" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/xiaobo.html">
+        							<img src="http://pic1.huashichang.com/2016/0527/01/57472bf5434d0_60_60.jpg" alt="小檗" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/jinxingguo.html">
+        							<img src="http://pic1.huashichang.com/2016/0628/00/577156f7db966_60_60.jpg" alt="金星果" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/zishu.html">
+        							<img src="http://pic1.huashichang.com/2016/0719/21/578e2de29e9be_60_60.jpg" alt="梓树" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/ziyexiaobo.html">
+        							<img src="http://pic1.huashichang.com/2016/0907/23/57d032fe423bf_60_60.jpg" alt="紫叶小檗" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/baijuanmei.html">
+        							<img src="http://pic1.huashichang.com/2016/0526/00/5745cf9a9611d_60_60.jpg" alt="白鹃梅" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/guinanmulian.html">
+        							<img src="http://pic1.huashichang.com/2016/0729/20/579b4ad2573b0_60_60.jpg" alt="桂南木莲" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/feidiegua.html">
+        							<img src="http://pic1.huashichang.com/2016/0630/19/57750890de4fc_60_60.jpg" alt="飞碟瓜" width="54px" hight="54px">
+        						</a>
+        					</label>
+        				</li>
+                        <li class="shadow">
+                            <h3>
+                                <a href="/hua/yaoyong/" title="节庆类">节庆类 • 张灯结彩</a>
+                            </h3>
+                            <span>正是今年风景美，千红万紫报春光</span>
+                            <label class="img">
+                                <a href="http://www.aihuhua.com/huahui/xiaolihua.html">
+                                    <img src="http://pic1.huashichang.com/2016/0505/22/572b5b617e496_60_60.jpg" alt="小丽花" width="54px" hight="54px">
+                                </a>
+                                <a href="http://www.aihuhua.com/huahui/huangju.html">
+                                    <img src="http://pic1.huashichang.com/2014/1026/12/544c777b58d80_60_60.jpg" alt="幌菊" width="54px" hight="54px">
+                                </a>
+                                <a href="http://www.aihuhua.com/huahui/jinsulan.html">
+                                    <img src="http://pic1.huashichang.com/2015/1202/23/565f09cd8f4e5_60_60.png" alt="金粟兰" width="54px" hight="54px">
+                                </a>
+                                <a href="http://www.aihuhua.com/huahui/lvticao.html">
+                                    <img src="http://pic1.huashichang.com/2015/0217/21/54e34432deadb_60_60.jpg" alt="驴蹄草" width="54px" hight="54px">
+                                </a>
+                                <a href="http://www.aihuhua.com/huahui/jinju.html">
+                                    <img src="http://pic1.huashichang.com/2016/0812/06/57acf75345bb8_60_60.jpg" alt="金桔" width="54px" hight="54px">
+                                </a>
+                                <a href="http://www.aihuhua.com/huahui/qixinghua.html">
+                                    <img src="http://pic1.huashichang.com/2016/0616/21/5762a94ff24bc_60_60.jpg" alt="七星花" width="54px" hight="54px">
+                                </a>
+                                <a href="http://www.aihuhua.com/huahui/zhilibaibu.html">
+                                    <img src="http://pic1.huashichang.com/2016/0121/21/56a0e2f9bccc2_60_60.jpg" alt="黄歧花凤梨" width="54px" hight="54px">
+                                </a>
+                                <a href="http://www.aihuhua.com/huahui/shouanhong.html">
+                                    <img src="http://pic1.huashichang.com/2016/0619/07/5765e04b01fb4_60_60.jpeg" alt="首案红" width="54px" hight="54px">
+                                </a>
+                                <a href="http://www.aihuhua.com/huahui/jialan.html">
+                                    <img src="http://pic1.huashichang.com/2014/0424/10/5358718bea97b_60_60.jpg" alt="嘉兰" width="54px" hight="54px">
+                                </a>
+                            </label>
+                        </li>
+        				<li class="shadow">
+        					<h3>
+        						<a href="/hua/guanhua/" title="节庆类">观花类 • 花花世界</a>
+        					</h3>
+        					<span>山花照坞复烧溪，树树枝枝尽可迷</span>
+        					<label class="img">
+        						<a href="http://www.aihuhua.com/huahui/haixianbaochun.html">
+        							<img src="http://pic1.huashichang.com/2016/1123/22/5835a9a8f0917_60_60.jpg" alt="海仙报春" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/fansuixian.html">
+        							<img src="http://pic1.huashichang.com/2016/1026/21/5810aca2e5388_60_60.jpg" alt="繁穗苋" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/puzhimaogen.html">
+        							<img src="http://pic1.huashichang.com/2016/1102/23/581a024f84283_60_60.jpg" alt="匍枝毛茛" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/zexie.html">
+        							<img src="http://pic1.huashichang.com/2016/1115/00/5829e365f1984_60_60.jpg" alt="泽泻" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/dahuaxianzhulan.html">
+        							<img src="http://pic1.huashichang.com/2016/1204/21/5844212ec58c7_60_60.jpg" alt="大花线柱兰" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/haixianhua.html">
+        							<img src="http://pic1.huashichang.com/2016/1123/22/5835a72dc8992_60_60.jpg" alt="海仙花" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/cigu.html">
+        							<img src="http://pic1.huashichang.com/2016/1116/00/582b34bf43c07_60_60.jpg" alt="慈姑" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/shuibie.html">
+        							<img src="http://pic1.huashichang.com/2016/1119/06/582f7ef1a92c7_60_60.jpg" alt="水鳖" width="54px" hight="54px">
+        						</a>
+                                <a href="http://www.aihuhua.com/huahui/dahuajiroucan.html">
+                                    <img src="http://pic1.huashichang.com/2016/1025/20/580f4e02ecfc3_60_60.jpg" alt="大花鸡肉参" width="54px" hight="54px">
+                                </a>
+        					</label>
+        				</li>
+        				<li class="shadow">
+        					<h3>
+        						<a href="/hua/yaoyong/" title="节庆类">垂吊类 • 千垂万碧</a>
+        					</h3>
+        					<span>碧玉妆成一树高，万条垂下绿丝绦</span>
+        					<label class="img">
+        						<a href="http://www.aihuhua.com/huahui/caiyediaolan.html">
+        							<img src="http://pic1.huashichang.com/2016/0625/22/576e9abfeee78_60_60.jpg" alt="彩叶吊兰" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/dayediaolan.html">
+        							<img src="http://pic1.huashichang.com/2016/0827/22/57c1a93654c78_60_60.jpg" alt="大叶吊兰" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/gouweihong.html">
+        							<img src="http://pic1.huashichang.com/2014/1223/09/5498cad0baa96_60_60.jpg" alt="狗尾红" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/yinghuihua.html">
+        							<img src="http://pic1.huashichang.com/2013/0917/22/52386b37f11da_60_60.jpg" alt="鹦喙花" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/qianyediaolan.html">
+        							<img src="http://pic1.huashichang.com/2016/0413/22/570e523478865_60_60.jpg" alt="千叶吊兰" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/huanliangcao.html">
+        							<img src="http://pic1.huashichang.com/2014/0210/10/52f832f74605f_60_60.jpg" alt="还亮草" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/manxingfenglinghua.html">
+        							<img src="http://pic1.huashichang.com/2016/1107/23/58209ce99fdfe_60_60.jpg" alt="蔓性风铃花" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/tengqie.html">
+        							<img src="http://pic1.huashichang.com/2014/0417/14/534f75f83f786_60_60.jpg" alt="藤茄" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/qiancao.html">
+        							<img src="http://pic1.huashichang.com/2014/0915/10/541651b48bdaf_60_60.jpg" alt="茜草" width="54px" hight="54px">
+        						</a>
+        					</label>
+        				</li>
+        				<li class="shadow">
+        					<h3>
+        						<a href="/hua/yaoyong/" title="节庆类">中草药类 • 采兰赠药</a>
+        					</h3>
+        					<span>故山多药物，胜概忆桃源</span>
+        					<label class="img">
+        						<a href="http://www.aihuhua.com/huahui/jinbianlongshelan.html">
+        							<img src="http://pic1.huashichang.com/2016/1129/05/583ca59d7ee2e_60_60.jpg" alt="金边龙舌兰" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/dahuajiroucan.html">
+        							<img src="http://pic1.huashichang.com/2016/1025/20/580f4e02ecfc3_60_60.jpg" alt="大花鸡肉参" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/zhilibaibu.html">
+        							<img src="http://pic1.huashichang.com/2016/1101/06/5817cac2e0db1_60_60.jpg" alt="直立百部" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/yeyama.html">
+        							<img src="http://pic1.huashichang.com/2016/1201/05/583f4877e3430_60_60.jpg" alt="野亚麻" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/hezicao.html">
+        							<img src="http://pic1.huashichang.com/2016/1103/21/581b418acada1_60_60.jpg" alt="盒子草" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/shuibie.html">
+        							<img src="http://pic1.huashichang.com/2016/1119/06/582f7ef1a92c7_60_60.jpg" alt="水鳖" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/changbianhongjingtian.html">
+        							<img src="http://pic1.huashichang.com/2016/1027/22/581210dfbd961_60_60.jpg" alt="长鞭红景天" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/haixianhua.html">
+        							<img src="http://pic1.huashichang.com/2016/1123/22/5835a72dc8992_60_60.jpg" alt="海仙花" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/cigu.html">
+        							<img src="http://pic1.huashichang.com/2016/1116/00/582b34bf43c07_60_60.jpg" alt="慈姑" width="54px" hight="54px">
+        						</a>
+        					</label>
+        				</li>
+        				<li class="shadow">
+        					<h3>
+        						<a href="/hua/yaoyong/" title="节庆类">芳香类 • 香气袭人</a>
+        					</h3>
+        					<span>莲花如锦叶如盖，芳香自送摇清籁</span>
+        					<label class="img">
+        						<a href="http://www.aihuhua.com/huahui/baihuajiazhutao.html">
+        							<img src="http://pic1.huashichang.com/2016/0829/23/57c4592708282_60_60.jpg" alt="白花夹竹桃" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/huayeyuzan.html">
+        							<img src="http://pic1.huashichang.com/2016/1011/06/57fc13aef3a75_60_60.jpg" alt="花叶玉簪" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/shanzhijia.html">
+        							<img src="http://pic1.huashichang.com/2016/0811/20/57ac70335d133_60_60.jpg" alt="山指甲" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/honghuawenshulan.html">
+        							<img src="http://pic1.huashichang.com/2016/0915/10/57da0dd558106_60_60.jpg" alt="红花文殊兰" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/chuanyesongxiangcao.html">
+        							<img src="http://pic1.huashichang.com/2016/0810/21/57ab2871c2839_60_60.jpg" alt="串叶松香草" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/meiguobohe.html">
+        							<img src="http://pic1.huashichang.com/2016/0804/23/57a35a6f0900e_60_60.jpg" alt="美国薄荷" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/dahualiudaomu.html">
+        							<img src="http://pic1.huashichang.com/2016/0804/22/57a34fddb729c_60_60.jpg" alt="大花六道木" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/dayemulian.html">
+        							<img src="http://pic1.huashichang.com/2013/0827/22/521cb5883c77b_60_60.jpg" alt="大叶木莲" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/muhe.html">
+        							<img src="http://pic1.huashichang.com/2016/0723/08/5792b4305d03b_60_60.jpg" alt="木荷" width="54px" hight="54px">
+        						</a>
+        					</label>
+        				</li>
+        				<li class="shadow">
+        					<h3>
+        						<a href="/hua/yaoyong/" title="节庆类">趣味类 • 奇花异草</a>
+        					</h3>
+        					<span>水光潋滟花方好,山色空蒙枝亦奇</span>
+        					<label class="img">
+        						<a href="http://www.aihuhua.com/huahui/chayemu.html">
+        							<img src="http://pic1.huashichang.com/2013/0908/22/522c8e0ebd32e_60_60.jpg" alt="叉叶木" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/jimudan.html">
+        							<img src="http://pic1.huashichang.com/2016/0531/00/574c66e31c411_60_60.jpg" alt="姬牡丹" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/fanlv.html">
+        							<img src="http://pic1.huashichang.com/2014/1028/00/544e6d01dbbd8_60_60.jpg" alt="繁缕" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/sinuodengshuilan.html">
+        							<img src="http://pic1.huashichang.com/2014/0827/10/53fd4036ed8ec_60_60.jpg" alt="斯诺登水兰" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/daichunlan.html">
+        							<img src="http://pic1.huashichang.com/2016/0828/23/57c3029e4683a_60_60.jpg" alt="带唇兰" width="54px" hight="54px">
+        						</a>
+        						<a href="hhttp://www.aihuhua.com/huahui/shuweizhang.html">
+        							<img src="http://pic1.huashichang.com/2016/0526/00/5745d485dc85f_60_60.jpg" alt="鼠尾掌" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/qianniaocao.html">
+        							<img src="http://pic1.huashichang.com/2014/1010/00/5436b47a31f90_60_60.jpg" alt="千鸟草" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/ji.html">
+        							<img src="http://pic1.huashichang.com/2014/0621/11/53a4fbe1a44ff_60_60.jpg" alt="蓟" width="54px" hight="54px">
+        						</a>
+        						<a href="http://www.aihuhua.com/huahui/manxingfenglinghua.html">
+        							<img src="http://pic1.huashichang.com/2016/1101/06/5817cac2e0db1_60_60.jpg" alt="蔓性风铃花" width="54px" hight="54px">
+        						</a>
+        					</label>
+        				</li>
+        			</ul>
+        			<div class="circle">
+				   	   <span class="cu">1</span>
+				   	   <span>2</span>
+				   	   <span>3</span>
+				   	   <span>4</span>
+				   </div>	
+            		
+            	</div>	
+            </div>	
+            <!-- userlist -->
+            <div class="userlist">
+            	<h2 class="title">
+            	护花达人
+                <a href="http://www.aihuhua.com/people/">(更多)</a>
+            	</h2>
+            	<div class="cont shadow">
+            		<div class="reccont">
+            			<a href="http://m.aihuhua.com/yonghu/4/" class="img">
+            				<img src="http://pic1.huashichang.com/avatar/a8/7f/f6/original_100_100.jpg?v1465859782" width="70px" hight="70px" alt="">
+            			</a>
+            			<a href="http://m.aihuhua.com/yonghu/4/" class="t">爱养花</a>
+            			<span class="u">68粉丝</span>
+            			<p class="l">上海市 市辖区 黄浦区</p>
+            			<p class="desk">这里是花儿成长的地方，是花的海洋，和你一起尽情地享受百花吐蕊的芬芳，同花儿一起茁壮成长。</p>
+            		  <dl class="list">
+                        <dt>最新养花知识</dt>
+                        <dd>
+                            <a href="http://www.aihuhua.com/wenzhang/yanghua1gk.html">想让家里变花海，就种这10种花！</a>
+                        </dd>
+                        <dd>
+                            <a href="http://www.aihuhua.com/wenzhang/yanghua1gj.html">推荐世界上最美的8款垂吊花~</a>
+                        </dd>
+                    </dl>
+                    </div>
+                    
+            		<ul class="listing">
+                        <li>
+                          <a href="http://m.aihuhua.com/yonghu/3/" class="img">
+                              <img src="http://pic1.huashichang.com/avatar/ec/cb/c8/original_50_50.jpg?v1419701218" alt="">
+                          </a>
+                          <a href="http://m.aihuhua.com/yonghu/3/" class="t">任圆圆</a>
+                          <span class="u">49粉丝</span>
+                          <p class="desc">心情会随着简单的花开而变得轻松愉快起来，没什么缘由，嘴角都会扬起微笑的弧度。种一株简单的花，欣赏一种简单的美，拥有一种简单愉快的心情，这些都不需要想得太多，其实都是我们自己复杂了生活和心境。</p>
+                        </li>
+                        <li>
+                          <a href="http://rest.aihuhua.com/yonghu/45/" class="img">
+                              <img src="http://pic1.huashichang.com/avatar/6c/83/49/original_50_50.jpg?v1419701223" alt="">
+                          </a>
+                          <a href="http://rest.aihuhua.com/yonghu/45/" class="t">养花人</a>
+                          <span class="u">49粉丝</span>
+                          <p class="desc">喜欢独自走在花海的世界，总能在不经意间找到倾世的温馨，感受花田里的温存。</p>
+                        </li>
+                        <li>
+                          <a href="http://www.aihuhua.com/yonghu/42/" class="img">
+                              <img src="http://pic1.huashichang.com/avatar/a1/d0/c6/original_50_50.jpg?v1419701222" alt="">
+                          </a>
+                          <a href="http://www.aihuhua.com/yonghu/42/" class="t">花小姐</a>
+                          <span class="u">49粉丝</span>
+                          <p class="desc"></p>
+                        </li>
+                    </ul>
+            	</div>
+            </div> 
+            <!-- newlist -->
+            <div class="newlist">
+                <h2 class="title">
+                    养花日记
+                    <a href="http://www.aihuhua.com/riji/" class="more">(更多)</a>
+                </h2>
+                <ul class="list">
+                    <li class="shadow">
+                        <a href="http://www.aihuhua.com/riji/50998-4.html" class="img">
+                            <img src="http://pic1.huashichang.com/2016/0302/23/56d70b9e15b74_140_140.jpg" alt="">   
+                        </a>
+                         <a href="http://www.aihuhua.com/riji/50998-4.html" class="t"> 
+                             最具逼格的组合，红酒软木塞diy多肉植物盆栽
+                         </a>
+                         <span class="text">
+                         by 
+                             <a href="http://m.aihuhua.com/yonghu/4//" class="爱养花">爱养花</a>
+                         </span>
+                         <p class="desc">"平时大家喝了红酒的瓶盖积攒起来，也可以和肉肉组合在一起进行废..."</p>
+                    </li>
+                    <li class="shadow">
+                        <a href="http://www.aihuhua.com/riji/50991-4.html" class="img">
+                            <img src="http://pic1.huashichang.com/2016/0229/23/56d46a8be2dae_140_140.jpg" alt="">   
+                        </a>
+                         <a href="http://www.aihuhua.com/riji/50991-4.html" class="t"> 
+                             多肉植物盆栽制作，只需简单6步
+                         </a>
+                         <span class="text">
+                         by 
+                             <a href="http://m.aihuhua.com/yonghu/4//" class="爱养花">爱养花</a>
+                         </span>
+                         <p class="desc">“1、材料准备：容器、多肉植物、工具、营养土、颗粒土。...”</p>
+                    </li>
+                    <li class="shadow">
+                        <a href="http://www.aihuhua.com/riji/462-4.html" class="img">
+                            <img src="http://pic1.huashichang.com/2015/1213/16/566d2b06d1289_140_140.jpg" alt="">   
+                        </a>
+                         <a href="http://www.aihuhua.com/riji/462-4.html" class="t"> 
+                             最具逼格的组合，红酒软木塞diy多肉植物盆栽
+                         </a>
+                         <span class="text">
+                         by 
+                             <a href="http://m.aihuhua.com/yonghu/4//" class="爱养花">爱养花</a>
+                         </span>
+                         <p class="desc">"首先介绍一下大环境，有外阳台，有阳...”</p>
+                    </li>
+                    <li class="shadow">
+                        <a href="http://www.aihuhua.com/riji/205-45.html" class="img">
+                            <img src="http://pic1.huashichang.com/2015/0304/20/54f6f439d132a_140_140.jpg" alt="">   
+                        </a>
+                         <a href="http://www.aihuhua.com/riji/205-45.html" class="t"> 
+                             微景观的作用与价值
+                         </a>
+                         <span class="text">
+                         by 
+                             <a href="http://m.aihuhua.com/yonghu/45//" class="爱养花">爱养花</a>
+                         </span>
+                         <p class="desc">“有童心的人都喜欢在方寸之间构建自己想象中的世界，用这些小素材...”</p>
+                    </li>
+                    <li class="shadow">
+                        <a href="http://www.aihuhua.com/riji/199-4.html" class="img">
+                            <img src="http://pic1.huashichang.com/2015/0203/14/54d06b180e83a_140_140.jpg" alt="">   
+                        </a>
+                         <a href="http://www.aihuhua.com/riji/199-4.html" class="t"> 
+                             手工苔藓瓶盆景制作方法
+                         </a>
+                         <span class="text">
+                         by 
+                             <a href="http://m.aihuhua.com/yonghu/4//" class="爱养花">爱养花</a>
+                         </span>
+                         <p class="desc">“北方有没有苔藓？好像没有印象。记忆中的南方大山里有茂密的蕨类...”
+                        </p>
+                    </li>
+                    <li class="shadow">
+                        <a href="http://www.aihuhua.com/riji/50998-4.html" class="img">
+                            <img src="http://pic1.huashichang.com/2014/1205/17/54817df3250b6_140_140.jpg" alt="">   
+                        </a>
+                         <a href="http://www.aihuhua.com/riji/167-4.html" class="t"> 
+                            用罐头瓶制作微景观
+                         </a>
+                         <span class="text">
+                         by 
+                             <a href="http://m.aihuhua.com/yonghu/4//" class="爱养花">爱养花</a>
+                         </span>
+                         <p class="desc">“微景观是用苔藓植物和蕨类植物等生长环境相近的植物，搭配各种造...”</p>
+                    </li>
+
+                </ul>
+            </div>              
+        </div>
+		<!-- sidebar -->
+		<div class="sidebar">
+            <!-- logins -->
+			<div class="logins">
+                <div class="title">花痴都在这里，赶紧加入吧!</div>
+                <a href="http://www.aihuhua.com/register/" class="register">马上加入</a> 
+                <span class="account">
+
+                    已有账号，
+                    <a href="http://www.aihuhua.com/welcome/">
+                        从这里登陆>>
+                    </a>
+                </span>  
+                <div class="manner">
+                    <a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=qzone&addon=Login&hook=login_sync_other" class="qq">
+                        QQ登陆
+                    </a>
+                    <a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=sina&addon=Login&hook=login_sync_other" class="sina">
+                        新浪微博
+                    </a>
+                    <a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=qq&addon=Login&hook=login_sync_other" class="tqq">
+                        腾讯微博
+                    </a>
+                </div> 
+                <div class="more">
+                    <a href="http://www.aihuhua.com/welcome/">
+                        更多登录方式&gt;&gt;
+                    </a>
+                </div>     
+            </div>
+            <!--  season -->
+            <div class="season">
+                <h2 class="title">
+                    凌寒傲花 
+                    <a href="http://www.aihuhua.com/hua/dongji/" class="more">
+                        (更多时节花卉)
+                    </a>
+                </h2>
+                <ul class="list">
+                    <li>
+                        <a href="http://www.aihuhua.com/huahui/longzhuaye.html" class="img">
+                            <img src="http://pic1.huashichang.com/2016/1120/06/5830d32154152_60_60.jpg" alt="">
+                        </a>
+                        <a href="http://www.aihuhua.com/huahui/longzhuaye.html" class="t">龙爪叶</a>
+                    </li>
+                    <li>
+                        <a href="http://www.aihuhua.com/huahui/gongdengchangshouhua.html" class="img">
+                            <img src="http://pic1.huashichang.com/2016/1029/23/5814c568641cd_60_60.jpg" alt="">
+                        </a>
+                        <a href="http://www.aihuhua.com/huahui/longzhuaye.html" class="t">宫灯长寿花</a>
+                    </li>
+                    <li>
+                        <a href="http://www.aihuhua.com/huahui/taoyeshanhu.html" class="img">
+                            <img src="http://pic1.huashichang.com/2016/0927/23/57ea921366332_60_60.jpg" alt="">
+                        </a>
+                        <a href="http://www.aihuhua.com/huahui/taoyeshanhu.html" class="t">桃叶珊瑚</a>
+                    </li>
+                    <li>
+                        <a href="http://www.aihuhua.com/huahui/honghuayinhua.html" class="img">
+                            <img src="http://pic1.huashichang.com/2016/0816/00/57b1ee9282a86_60_60.jpg" alt="">
+                        </a>
+                        <a href="http://www.aihuhua.com/huahui/honghuayinhua.html" class="t">红花银桦</a>
+                    </li>
+                    <li>
+                        <a href="http://www.aihuhua.com/huahui/maoruixiang.html" class="img">
+                            <img src="http://pic1.huashichang.com/2016/0407/22/57066fe2b300f_60_60.jpg" alt="">
+                        </a>
+                        <a href="http://www.aihuhua.com/huahui/maoruixiang.html" class="t">毛瑞香</a>
+                    </li>
+                    <li>
+                        <a href="http://www.aihuhua.com/huahui/xinghuangdoulan.html" class="img">
+                            <img src="http://pic1.huashichang.com/2016/0427/22/5720d3668c6a1_60_60.jpg" alt="">
+                        </a>
+                        <a href="http://www.aihuhua.com/huahui/xinghuangdoulan.html" class="t">杏黄兜兰</a>
+                    </li>
+                    <li>
+                        <a href="http://www.aihuhua.com/huahui/doubanlan.html" class="img">
+                            <img src="http://pic1.huashichang.com/2016/0826/23/57c061d78e2c4_60_60.jpg" alt="">
+                        </a>
+                        <a href="http://www.aihuhua.com/huahui/doubanlan.html" class="t">豆瓣兰</a>
+                    </li>
+                    <li>
+                        <a href="http://www.aihuhua.com/huahui/fenyejinhua.html" class="img">
+                            <img src="http://pic1.huashichang.com/2016/0509/21/573093f94a5c1_60_60.jpg" alt="">
+                        </a>
+                        <a href="http://www.aihuhua.com/huahui/fenyejinhua.html" class="t">粉叶金花</a>
+                    </li>
+                </ul>
+            </div>
+        	<!-- taglist -->
+            <div class="taglist">
+                <h2 class="title">
+                    新花怒放
+                    <a href="http://www.aihuhua.com/hua/" title="更多花卉" rel="nofollow" class="more" target="_blank">
+                        (更多最新花卉)
+                    </a>
+                </h2>
+                <div class="list">
+                    <a href="http://www.aihuhua.com/huahui/helantie.html">荷兰铁</a>
+                    <a href="http://www.aihuhua.com/huahui/jinbianlongshelan.html">金边龙兰舌</a>
+                    <a href="http://www.aihuhua.com/huahui/huayeyajiaomu.html">花叶鸭脚木</a>
+                    <a href="http://www.aihuhua.com/huahui/heimeiren.html">黑美人</a>
+                    <a href="http://www.aihuhua.com/huahui/jinzuanmanlvrong.html">金钻蔓绿绒</a>
+                    <a href="http://www.aihuhua.com/huahui/chunyu.html">春雨</a>
+                    <a href="http://www.aihuhua.com/huahui/yementie.html">也门铁</a>
+                    <a href="http://www.aihuhua.com/huahui/longzhuaye.html">龙爪叶</a>
+                    <a href="http://www.aihuhua.com/huahui/yuzan.html">玉簪</a>
+                    <a href="http://www.aihuhua.com/huahui/shuibie.html">水鳖</a>
+                    <a href="http://www.aihuhua.com/huahui/zexie.html">泽泻</a>
+                    <a href="http://www.aihuhua.com/huahui/zucao.html">菹草</a>
+                    <a href="http://www.aihuhua.com/huahui/zijin.html">紫堇</a>
+                </div>
+            </div>
+            <!-- focuse -->
+            <div class="newlist">
+                <h2 class="title" title="养花专题">柳巷花街</h2> 
+                    <div class="actfocus">
+                        <div style="width:250px;overflow:hidden;">
+                            <a href="http://www.aihuhua.com/wenzhang/282.html" target="_blank">
+                                <img src="http://pic1.huashichang.com/2013/1110/00/527e600d7c9ac.jpg" title="乐享健康新鲜空气" alt="乐享健康新鲜空气" width="250" height="110">
+                            </a> 
+                            <div class="tip">
+                                <a href="http://www.aihuhua.com/wenzhang/282.html" target="_blank">
+                                    家庭小植物盆栽 - 乐享健康新鲜空气
+                                </a> 
+                            </div>
+                        </div>
+                    </div>  
+            </div>
+            <!-- newlist1 -->
+            <div class="newlist">
+                <h2 class="title">
+                    动物们的“花花世界” 
+                    <a href="http://www.aihuhua.com/zhuti/dongwuyuhua/" title="更多动物们的“花花世界”主题站文章" class="more" rel="nofollow" target="_blank">
+                        (更多)
+                    </a>
+                </h2>
+                <div class="list">
+                    <a href="http://www.aihuhua.com/wenzhang/yanghua1d3.html">
+                        <i></i>
+                        家里有宠物的好好看看了，猫狗吃花，等于自杀！
+                    </a>
+                    <a href="http://www.aihuhua.com/wenzhang/yanghua14y.html">
+                        <i></i>
+                        猫狗也爱花
+                    </a>
+                    <a href="http://www.aihuhua.com/wenzhang/407.html">
+                        <i></i>
+                        透明之翼
+                    </a>
+                    <a href="http://www.aihuhua.com/wenzhang/406.html">
+                        <i></i>
+                        还记得以前落在手里的瓢虫么
+                    </a>
+                    <a href="http://www.aihuhua.com/wenzhang/405.html">
+                        <i></i>
+                        一只小黑猫，走过一年四季
+                    </a>
+
+                </div>
+            </div>
+            <!-- newlist2 -->
+            <div class="newlist">
+                <h2 class="title">
+                    花海旅途 
+                    <a href="http://www.aihuhua.com/zhuti/dongwuyuhua/" title="更多动物们的“花花世界”主题站文章" class="more" rel="nofollow" target="_blank">
+                        (更多)
+                    </a>
+                </h2>
+                <div class="list">
+                    <a href="http://www.aihuhua.com/wenzhang/yanghua1d3.html">
+                        <i></i>
+                        想让你家变化海，就种这10种花！
+                    </a>
+                    <a href="http://www.aihuhua.com/wenzhang/yanghua14y.html">
+                        <i></i>
+                        说走就走的旅行里，总有个说停就停的花园
+                    </a>
+                    <a href="http://www.aihuhua.com/wenzhang/407.html">
+                        <i></i>
+                        想陪你一起到老，看青藤缠绕，看月秋落
+                    </a>
+                    <a href="http://www.aihuhua.com/wenzhang/406.html">
+                        <i></i>
+                        这个五月，和你喜欢的人一起看玫瑰吧！
+                    </a>
+                    <a href="http://www.aihuhua.com/wenzhang/405.html">
+                        <i></i>
+                        夏天到了，我们一起去赏花吧!
+                    </a>
+
+                </div>
+            </div>
+            <!-- newlist3 -->
+            <div class="newlist">
+                <h2 class="title">
+                    奇花异草
+                    <a href="http://www.aihuhua.com/zhuti/dongwuyuhua/" title="更多动物们的“花花世界”主题站文章" class="more" rel="nofollow" target="_blank">
+                        (更多)
+                    </a>
+                </h2>
+                <div class="list">
+                    <a href="http://www.aihuhua.com/wenzhang/yanghua1d3.html">
+                        <i></i>
+                        世界上最性感的屁股竟然是。。。
+                    </a>
+                    <a href="http://www.aihuhua.com/wenzhang/yanghua14y.html">
+                        <i></i>
+                        黑色花都可以这么美，你是要上天吗？
+                    </a>
+                    <a href="http://www.aihuhua.com/wenzhang/407.html">
+                        <i></i>
+                        大自然的奇花异草，你不是最后一个知道
+                    </a>
+                    <a href="http://www.aihuhua.com/wenzhang/406.html">
+                        <i></i>
+                        绝世奇花你见过几种......
+                    </a>
+                    <a href="http://www.aihuhua.com/wenzhang/405.html">
+                        <i></i>
+                        比天气预报还准的花儿，你见过吗?
+                    </a>
+
+                </div>
+            </div>
+            <!-- newlist4 -->
+            <div class="newlist">
+                <h2 class="title">
+                    养花知识 
+                    <a href="http://www.aihuhua.com/zhuti/dongwuyuhua/" title="更多动物们的“花花世界”主题站文章" class="more" rel="nofollow" target="_blank">
+                        (更多)
+                    </a>
+                </h2>
+                <div class="list">
+                    <a href="http://www.aihuhua.com/wenzhang/yanghua1d3.html">
+                        <i></i>
+                        常见的13种绿植的养护方法~
+                    </a>
+                    <a href="http://www.aihuhua.com/wenzhang/yanghua14y.html">
+                        <i></i>
+                        教你如何拯救这5种快要冻死的植物！
+                    </a>
+                    <a href="http://www.aihuhua.com/wenzhang/407.html">
+                        <i></i>
+                        蜂窝煤渣养花知多少!
+                    </a>
+                    <a href="http://www.aihuhua.com/wenzhang/406.html">
+                        <i></i>
+                        这10种花冬天养照样爆棚！
+                    </a>
+                    <a href="http://www.aihuhua.com/wenzhang/405.html">
+                        <i></i>
+                        冬天养花水浇错了，当然养不活~
+                    </a>
+
+                </div>
+            </div>
+            <!-- newlist5 -->
+            <div class="newlist">
+                <h2 class="title">
+                    幸运花 
+                    <a href="http://www.aihuhua.com/zhuti/dongwuyuhua/" title="更多动物们的“花花世界”主题站文章" class="more" rel="nofollow" target="_blank">
+                        (更多)
+                    </a>
+                </h2>
+                <div class="list">
+                    <a href="http://www.aihuhua.com/wenzhang/yanghua1d3.html">
+                        <i></i>
+                        生日花语——5月12日
+                    </a>
+                    <a href="http://www.aihuhua.com/wenzhang/yanghua14y.html">
+                        <i></i>
+                        生日花语—5月11日
+                    </a>
+                    <a href="http://www.aihuhua.com/wenzhang/407.html">
+                        <i></i>
+                        风象星座卧室装修，让桃花降临你家
+                    </a>
+                    <a href="http://www.aihuhua.com/wenzhang/406.html">
+                        <i></i>
+                        狮子座的幸运花
+                    </a>
+                    <a href="http://www.aihuhua.com/wenzhang/405.html">
+                        <i></i>
+                        巨蟹座的幸运花
+                    </a>
+
+                </div>
+            </div>
+            <!-- newlist6 -->
+            <div class="newlist">
+                <h2 class="title">
+                    组合盆栽的日常维护 
+                    <a href="http://www.aihuhua.com/zhuti/dongwuyuhua/" title="更多动物们的“花花世界”主题站文章" class="more" rel="nofollow" target="_blank">
+                        (更多)
+                    </a>
+                </h2>
+                <div class="list">
+                    <a href="http://www.aihuhua.com/wenzhang/405.html">
+                        <i></i>
+                        组合盆栽的日常维护
+                    </a>
+                    <a href="http://www.aihuhua.com/wenzhang/yanghua1d3.html">
+                        <i></i>
+                        多肉植物组合盆栽的步骤、方法与小贴士
+                    </a>
+                    <a href="http://www.aihuhua.com/wenzhang/yanghua14y.html">
+                        <i></i>
+                        组合盆栽的分类与应用
+                    </a>
+                    <a href="http://www.aihuhua.com/wenzhang/407.html">
+                        <i></i>
+                        组合盆栽设计原理-植株质地的搭配
+                    </a>
+                    <a href="http://www.aihuhua.com/wenzhang/406.html">
+                        <i></i>
+                        组合盆栽色彩搭配的设计
+                    </a>
+                </div>
+            </div>
+		</div>
+	</div>
+    <div class="bottomlink">
+        <h3 class="title">
+            锦上添花 
+            <span style="font-size:12px;color:#999999;margin-left:10px;">( 合作：service@aihuhua.com )</span>
+        </h3>
+     
+        <ul>
+            <li><a href="http://www.aihuhua.com/hua/" title="hua" target="_self">花卉</a></li>
+            <li><a href="http://www.aihuhua.com" title="花" target="_blank">花</a></li>
+            <li><a href="http://www.aihuhua.com" title="花卉种植" target="_self">花卉种植</a></li>
+            <li><a href="http://www.aihuhua.com/baike/" title="花的种类" target="_self">花的种类</a></li>
+            <li><a href="http://www.aihuhua.com/baike/yiniansheng/" title="一年生花卉" target="_self">一年生花卉</a></li>
+            <li><a href="http://www.aihuhua.com/hua/penzai/" title="盆栽花卉" target="_self">盆栽花卉</a></li>
+            <li><a href="http://www.aihuhua.com/hua/rongyi/" title="懒人花卉" target="_self">懒人花卉</a></li>
+            <li><a href="http://www.aihuhua.com/baike/shichong/" title="食虫植物" target="_self">食虫植物</a></li>
+            <li><a href="http://www.aihuhua.com/baike/" title="花卉种类" target="_self">花卉种类</a></li>
+            <li><a href="http://www.aihuhua.com/hua/" title="花卉大全" target="_self">花卉大全</a></li>
+            <li><a href="http://www.aihuhua.com/baike/yiniansheng/" title="一年生植物" target="_self">一年生植物</a></li>
+            <li><a href="http://www.aihuhua.com" title="花卉养殖" target="_self">花卉养殖</a></li>
+            <li><a href="http://www.aihuhua.com/hua/bangongshi/" title="办公室花卉" target="_self">办公室花卉</a></li>
+            <li><a href="http://www.aihuhua.com" title="花卉种植网" target="_self">花卉种植网</a></li><li><a href="http://www.aihuhua.com" title="花卉养护" target="_self">花卉养护</a></li>
+            <li><a href="http://www.aihuhua.com" title="花卉养植网" target="_self">花卉养植网</a></li>
+            <li><a href="http://www.aihuhua.com/hua/guanshang/" title="观赏花卉大全" target="_self">观赏花卉大全</a></li>
+            <li><a href="http://www.aihuhua.com/baike/shuisheng/" title="水生花卉网" target="_self">水生花卉网</a></li>
+            <li><a href="http://www.aihuhua.com" title="花草种植" target="_self">花草种植</a></li>
+            <li><a href="http://www.aihuhua.com/hua/" title="花卉图片及名称大全" target="_self">花卉图片及名称大全</a></li>
+            <li><a href="http://www.aihuhua.com/hua/" title="花的图片" target="_self">花的图片</a></li>
+            <li><a href="http://bbs.mychg.org" target="_blank">藏花阁</a></li><li><a href="http://www.dreamhy.com" target="_blank">梦想花园</a></li>
+            <li><a href="http://www.alihuahua.com/link.html" target="_blank">鲜花网</a></li><li><a href="http://yangtai.rouding.com" target="_blank">园艺设计</a></li>
+            <li><a href="http://www.wdptj.com" target="_blank">植物图片大全</a></li>
+            <li><a href="http://www.drlmeng.com" target="_blank">多肉植物</a></li>
+            <li><a href="http://www.zuihua.com" target="_blank">醉花花卉网</a></li>
+            <li><a href="http://net.1nongjing.com" target="_blank">农业科技</a></li>
+            <li><a href="http://www.cmeii.com" target="_blank">苗木</a></li>
+            <li><a href="http://www.tiehu520.com" target="_blank">铁壶</a></li>
+            <li><a href="http://www.1818hm.com" target="_blank">中国花木网</a></li>
+            <li><a href="http://www.5i591.com" target="_blank">鲜花速递</a></li>
+            <li><a href="http://www.zhang007.com" target="_blank">紫藤</a></li>
+            <li><a href="http://www.jingyanshu.com" target="_blank">经验</a></li>
+            <li><a href="http://www.cnhnb.com" target="_blank">中国惠农网</a></li>
+            <li><a href="http://www.aihuaju.com" target="_blank">花店</a></li>
+            <li><a href="http://www.52hua.cn" target="_blank">鲜花网</a></li>
+            <li><a href="http://www.eduoduo.com.cn" target="_blank">一朵朵鲜花网</a></li>  
+        </ul>
+        
+    </div>
+    <div class="footer_space">
+        <div class="wrapper">
+            <div class="fl">
+                <div class="picItem">
+                    <a href="">
+                        <img src="http://t10.baidu.com/it/u=1776474492,2186318155&fm=76" alt="">
+                    </a>
+                    <a href="" class="title">室内花卉网</a>
+                </div>
+            </div>
+            
+            <div class="fl" style="padding-left:0px">
+                <div class="picItem">
+                    <a href="">
+                        <img src="http://t10.baidu.com/it/u=1594176177,2295673799&fm=76" alt="">
+                    </a>
+                    <a href="" class="title">花草批发市场</a>
+                </div>
+            </div>
+            <div class="fl" style="padding-left:0px">
+                <div class="picItem">
+                    <a href="">
+                        <img src="http://t10.baidu.com/it/u=1489145691,2244348214&fm=76" alt="">
+                    </a>
+                    <a href="" class="title">批发盆栽花卉</a>
+                </div>
+            </div>
+            <div class="fl" style="padding-left:0px">
+                <div class="picItem">
+                    <a href="">
+                        <img src="http://t11.baidu.com/it/u=1093631548,1261609789&fm=76" alt="">
+                    </a>
+                    <a href="" class="title">花卉网站</a>
+                </div>
+            </div>
+            <div class="fl" style="padding-left:0px">
+                <div class="picItem">
+                    <a href="">
+                        <img src="http://t12.baidu.com/it/u=814572908,120677066&fm=76" alt="">
+                    </a>
+                    <a href="" class="title">草花种子</a>
+                </div>
+            </div>
+            <div class="fl" style="padding-left:0px">
+                <div class="picItem">
+                    <a href="">
+                        <img src="http://t12.baidu.com/it/u=1551517331,2099569413&fm=76" alt="" >
+                    </a>
+                    <a href="" class="title">室内植物价格</a>
+                </div>
+            </div>
+            <div class="fl" style="padding-left:0px;padding-right:0px">
+                <div class="picItem">
+                    <a href="">
+                        <img src="http://t11.baidu.com/it/u=2347257091,3270063164&fm=76" alt="">
+                    </a>
+                    <a href="" class="title">花卉租摆</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- foot -->
+    <div class="footer"> 
+        <div class="cont">
+            <div class="record">
+                ©2013 花卉网 沪ICP备12046703号-5  
+            </div>
+            <div class="link">
+                <a href="http://www.aihuhua.com/sitemap.html">网站地图</a>.
+                <a href="http://www.aihuhua.com/hua/">花卉</a>.
+                <a href="http://www.aihuhua.com/hua/">花卉大全</a>.
+                <a href="http://www.aihuhua.com">花卉网</a>.
+                <a href="http://www.aihuhua.com/baike/">花的种类</a>.
+                <a href="http://www.aihuhua.com/hua/penzai/">花卉盆景</a>.
+                <a href="http://www.aihuhua.com/hua/keting/">室内花卉</a>.
+                <a href="http://www.aihuhua.com/hua/">花卉图片及名称大全</a>.
+                <a href="http://www.aihuhua.com/hua/">花的图片</a>.
+            </div>
+            <div class="tips">
+                护花网（
+                <a href="http://www.aihuhua.com">花卉网</a>
+                www.aihuhua.com) 这里是花儿成长的地方，聚焦亿万护花使者，同花儿一起茁壮成长！
+            </div>
+        </div>
+    </div>
+    <!-- 二维码 -->
+    <div class="webcorde">
+        <dl class="codeandroid">
+            <dt>- 安卓app -</dt>
+            <dd></dd>
+        </dl>
+        <dl class="codeimg">
+            <dt>- 官方网站 -</dt>
+            <dd></dd>
+        </dl>
+        <dl class="codeweixin">
+            <dt>- 微信公众号 -</dt>
+            <dd></dd>
+        </dl>
+    </div>
+    <!-- 返回顶部 -->
+    <div title="返回顶部" style="position:fixed; bottom:30px;right:20px;opacity:1; cursor:pointer;">
+        <a href="#top" class="top_stick">&nbsp;</a>
+    </div>
+    <!-- 百度百科 -->
+    <div style="top: 396px; left: 50%; margin-left: -30px; padding-left: 6px; position: fixed; width: 208px; background-color: rgb(244, 240, 236);">
+        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+        <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+        <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+        <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+        <a href="#" class="bds_kaixin001" data-cmd="kaixin001" title="分享到开心网"></a>
+        <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+        <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+        <a href="#" class="bds_huaban" data-cmd="huaban" title="分享到花瓣"></a>
+    </div>
+    <!-- navigation -->
+    <div class="navigation">
+        <div class="cont">
+            <div class="cate">
+                <a href="javascript:void(0);" class="title">
+                    快捷
+                    <em class="ico"></em>
+                </a>
+                <ul class="catelist">
+                    <li>
+                        <a href="http://www.aihuhua.com/riji/" rel="nofollow">
+                            <i>
+                                <img src="http://www.aihuhua.com/apps/blog/Appinfo/icon_app.png" width="16" height="16">
+                                养花日记
+                            </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.aihuhua.com/riji/" rel="nofollow">
+                            <i>
+                                <img src="http://www.aihuhua.com/apps/weiba/Appinfo/icon_app.png" width="16" height="16">
+                                护花山庄
+                            </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.aihuhua.com/riji/" rel="nofollow">
+                            <i>
+                                <img src="http://static.aihuhua.com/image/more.png" width="16" height="16">
+                                更多应用
+                            </i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cate" style="margin-left:160px">
+                <a href="javascript:void(0);" class="title">
+                    特色
+                    <em class="ico"></em>
+                </a>
+                <div class="catelist fulllist" style="display: none;">
+                    <a href="/huahui/leishen.html" target="_blank" title="雷神花卉">雷神</a>
+                    <a href="/huahui/helantie.html" target="_blank" title="荷兰铁花卉">荷兰铁</a>
+                    <a href="/huahui/jinbianlongshelan.html" target="_blank" title="金边龙舌兰花卉">金边龙舌兰</a>
+                    <a href="/huahui/huayeyajiaomu.html" target="_blank" title="花叶鸭脚木花卉">花叶鸭脚木</a>
+                    <a href="/huahui/heimeiren.html" target="_blank" title="黑美人花卉">黑美人</a>
+                    <a href="/huahui/jinzuanmanlvrong.html" target="_blank" title="金钻蔓绿绒花卉">金钻蔓绿绒</a>
+                    <a href="/huahui/chunyu.html" target="_blank" title="春羽花卉">春羽</a>
+                    <a href="/huahui/yementie.html" target="_blank" title="也门铁花卉">也门铁</a>
+                    <a href="/huahui/longzhuaye.html" target="_blank" title="龙爪叶花卉">龙爪叶</a>
+                    <a href="/huahui/yuzan.html" target="_blank" title="玉簪花卉">玉簪</a>
+                    <a href="/huahui/shuibie.html" target="_blank" title="水鳖花卉">水鳖</a>
+                    <a href="/huahui/zexie.html" target="_blank" title="泽泻花卉">泽泻</a>          
+                </div>
+            </div>
+            <div class="cate">
+                <a href="javascript:void(0);" class="title">
+                    类别
+                    <em class="ico"></em>
+                </a>
+                <div class="catelist fulllist">
+                    <a href="/hua/quwei/" target="_self" title="趣味类花卉">趣味类</a>
+                    <a href="/hua/fangxiang/" target="_self" title="芳香类花卉">芳香类</a>
+                    <a href="/hua/guanguo/" target="_self" title="观果类花卉">观果类</a>
+                    <a href="/hua/guanhua/" target="_self" title="观花类花卉">观花类</a>
+                    <a href="/hua/guanye/" target="_self" title="观叶类花卉">观叶类</a>
+                    <a href="/hua/guanjing/" target="_self" title="观茎类花卉">观茎类</a>
+                    <a href="/hua/jieqing/" target="_self" title="节庆类花卉">节庆类</a>
+                    <a href="/hua/chuidiao/" target="_self" title="垂吊类花卉">垂吊类</a>
+                    <a href="/hua/guoshu/" target="_self" title="果蔬类花卉">果蔬类</a>
+                    <a href="/hua/dibeicaoping/" target="_self" title="地被草坪花卉">地被草坪</a>
+                    <a href="/hua/shuipei/" target="_self" title="水培类花卉">水培类</a>
+                    <a href="/hua/penzai/" target="_self" title="盆栽类花卉">盆栽类</a>       
+                </div>
+            </div>
+            <div class="cate">
+                <a href="javascript:void(0);" class="title">
+                    功能
+                    <em class="ico"></em>
+                </a>
+                <div class="catelist fulllist">
+                    <a href="/hua/guanshang/" target="_self" title="观赏花卉">观赏</a>
+                    <a href="/hua/jinghuakongqi/" target="_self" title="净化空气花卉">净化空气</a>
+                    <a href="/hua/xijiaquan/" target="_self" title="吸甲醛花卉">吸甲醛</a>
+                    <a href="/hua/fangfushe/" target="_self" title="防辐射花卉">防辐射</a>
+                    <a href="/hua/tishen/" target="_self" title="提神花卉">提神</a>
+                    <a href="/hua/shajun/" target="_self" title="杀菌花卉">杀菌</a>
+                    <a href="/hua/quwen/" target="_self" title="驱蚊花卉">驱蚊</a>
+                    <a href="/hua/yaoyong/" target="_self" title="药用花卉">药用</a>            
+                </div>
+            </div>
+            <div class="cate">
+                <a href="javascript:void(0);" class="title">
+                    环境
+                    <em class="ico"></em>
+                </a>
+                <div class="catelist fulllist">
+                    <a href="/hua/yangtai/" target="_self" title="阳台花卉">阳台</a>
+                    <a href="/hua/chuangtai/" target="_self" title="窗台花卉">窗台</a>
+                    <a href="/hua/tingyuan/" target="_self" title="庭院花卉">庭院</a>
+                    <a href="/hua/louding/" target="_self" title="楼顶花卉">楼顶</a>
+                    <a href="/hua/keting/" target="_self" title="客厅花卉">客厅</a>
+                    <a href="/hua/canting/" target="_self" title="餐厅花卉">餐厅</a>
+                    <a href="/hua/chaji/" target="_self" title="茶几花卉">茶几</a>
+                    <a href="/hua/chufang/" target="_self" title="厨房花卉">厨房</a>
+                    <a href="/hua/bangongshi/" target="_self" title="办公室花卉">办公室</a>
+                    <a href="/hua/bangongzhuo/" target="_self" title="办公桌花卉">办公桌</a>
+                    <a href="/hua/shufang/" target="_self" title="书房花卉">书房</a>
+                    <a href="/hua/woshi/" target="_self" title="卧室花卉">卧室</a>
+                    <a href="/hua/weishengjian/" target="_self" title="卫生间花卉">卫生间</a>
+                    <a href="/hua/yuanlin/" target="_self" title="园林花卉">园林</a>            
+                </div>
+            </div>
+            <div class="cate">
+                <a href="javascript:void(0);" class="title">
+                    花期
+                    <em class="ico"></em>
+                </a>
+                <div class="catelist fulllist" style="display: none;">
+                    <a href="/hua/chunji/" target="_self" title="春季花卉">春季</a>
+                    <a href="/hua/xiaji/" target="_self" title="夏季花卉">夏季</a>
+                    <a href="/hua/qiuji/" target="_self" title="秋季花卉">秋季</a>
+                    <a href="/hua/dongji/" target="_self" title="冬季花卉">冬季</a>
+                    <a href="/hua/siji/" target="_self" title="四季花卉">四季</a>
+                    <a href="/hua/bukaihua/" target="_self" title="不开花花卉">不开花</a>
+                    <a href="/hua/xiyang/" target="_self" title="喜阳花卉">喜阳</a>
+                    <a href="/hua/xiyin/" target="_self" title="喜阴花卉">喜阴</a>        
+                </div>
+            </div>
+            <div class="cate">
+                <a href="javascript:void(0);" class="title">
+                    难度
+                    <em class="ico"></em>
+                </a>
+                <div class="catelist fulllist" style="display: none;">
+                    <a href="/hua/rongyi/" target="_self" title="容易养殖花卉">容易养殖</a>
+                    <a href="/hua/liuxin/" target="_self" title="留心养殖花卉">留心养殖</a>
+                    <a href="/hua/jingxin/" target="_self" title="精心养护花卉">精心养护</a>
+                    <a href="/hua/zhuanye/" target="_self" title="专业养护花卉">专业养护</a>         
+               </div>
+            </div>
+            <div class="login">
+                <a href="http://www.aihuhua.com/index.php?app=public&amp;mod=Widget&amp;act=displayAddons&amp;type=qzone&amp;addon=Login&amp;hook=login_sync_other" title="QQ账号登录" rel="nofollow" class="qq" target="_blank">
+                    QQ登录
+                </a>
+                <a href="http://www.aihuhua.com/index.php?app=public&amp;mod=Widget&amp;act=displayAddons&amp;type=sina&amp;addon=Login&amp;hook=login_sync_other" title="新浪微博登录" rel="nofollow" class="weibo" target="_blank">
+                    新浪微博
+                </a>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
