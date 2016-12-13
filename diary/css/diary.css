@@ -142,7 +142,6 @@ element.style {
         text-align: center;
         line-height: 34px;
         height: 34px;
-        border-bottom:1px dotted #ccc;
     }
     .navigation .cont .fulllist{
         width: 220px;
@@ -156,8 +155,9 @@ element.style {
         float: left;
         padding: 3px 0px 4px 15px;
         overflow: hidden;
-        /*border-bottom: 1px dotted ;*/
-        text-decoration: underline;
+    }
+    .navigation .fulllist a:hover{
+        text-decoration: underline;  
     }
     .navigation .login {
         margin: 0px;
@@ -221,6 +221,7 @@ element.style {
     	text-indent: -999px;	
         background: url('../images/logo.gif') no-repeat;
        }
+    /*<!-- nav -->*/
     .header .nav{
     	width: 360px;
         height: 22px;
@@ -229,7 +230,7 @@ element.style {
         font-size: 16px;
         font-family: '微软雅黑','YaHei','黑体','Hei',Tahoma,Helvetica,arial,sans-serif;
     }
-    .header .nav li {
+    .header .nav li{
         float: left;
         height: 22px;
         line-height: 22px;
@@ -237,7 +238,7 @@ element.style {
         text-align: center;
         margin: 0 13px 0 13px;
     }
-    .header .nav li.focus{
+    .focus{
     	border-bottom: 2px #333333 solid;
     	background: none;
     	width: 32px;

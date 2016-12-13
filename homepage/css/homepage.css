@@ -1408,7 +1408,6 @@ input{
 	    text-align: center;
 	    line-height: 34px;
 	    height: 34px;
-	    border-bottom:1px dotted #ccc;
 	}
 	.navigation .cont .fulllist{
 		width: 220px;
@@ -1422,9 +1421,10 @@ input{
 	    float: left;
 	    padding: 3px 0px 4px 15px;
 	    overflow: hidden;
-	    /*border-bottom: 1px dotted ;*/
-	    text-decoration: underline;
 	}
+	.navigation .fulllist a:hover{
+        text-decoration: underline;  
+    }
 	.navigation .login {
 		margin: 0px;
 	    width: 180px;

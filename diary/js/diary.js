@@ -31,8 +31,6 @@ $(document).ready(function(){
        $(".btn-cancel").mouseleave(function(){
           $(this).removeClass("btn-cancelbj").children().css("color","#999").children().css("background","url(./images/add.png) no-repeat 0 -55px")
       })
-
-
       //login登陆
       $(".diandl").click(function(){
         $(".dendl").css("display","block")
