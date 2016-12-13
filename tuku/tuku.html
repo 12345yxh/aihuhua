@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tuku</title>
+	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="tuku.css">
+	<script type="text/javascript" src="tuku.js"></script>
+</head>
+<body>
+	<!-- 页头 -->
+	<div class="yetou">
+		<div class="yetou1">
+			<ul class="kuaijie">
+			    <li>快捷<span></span>
+				    <div class="yhrj">
+  						<h6><a href=""><i><img src="images/rijitubiao.png"></i>养花日记</a></h6>
+  						<h6><a href="../huhuashanzhuang/huhuashanzhuang.html"><i><img src="images/shanzhuangtubiao.png"></i>护花山庄</a></h6>
+  						<h6><a href="http://www.aihuhua.com/index.php?app=public&mod=App&act=addapp"><i><img src="images/more.png"></i>更多应用</a></h6>
+					 </div>
+			    </li>
+			</ul>
+			<ul class="tese">
+				<li class="tese1">特色<span></span>
+		          <div class="tese1-helantie">
+		            <a href="">荷兰铁</a>
+		            <a href="">金边龙舌</a>
+		            <a href="">花叶鸭脚</a>
+		            <a href="">黑美人</a>
+		            <a href="">金钻蔓绿</a>
+		            <a href="">春羽</a>
+		            <a href="">也门铁</a>
+		            <a href="">龙爪叶</a>
+		            <a href="">玉籫</a>
+		            <a href="">水鳖</a>
+		            <a href="">泽泻</a>
+		            <a href="">菹草</a>
+		          </div>
+        		</li>
+				<li class="tese2">类别<span></span>
+		            <div class="tese2-quweilei">
+		              <a href="">趣味类</a>
+		              <a href="">芳香类</a>
+		              <a href="">观果类</a>
+		              <a href="">观花类</a>
+		              <a href="">观叶类</a>
+		              <a href="">观茎类</a>
+		              <a href="">节庆类</a>
+		              <a href="">垂吊类</a>
+		              <a href="">果蔬类</a>
+		              <a href="">地被草坪</a>
+		              <a href="">水培类</a>
+		              <a href="">盆栽类</a>
+		            </div>
+		        </li>
+				<li class="tese3">功能<span></span>
+		            <div class="tese3-guanshang">
+		              <a href="">观赏</a>
+		              <a href="">净化空气</a>
+		              <a href="">吸甲醛</a>
+		              <a href="">防辐射</a>
+		              <a href="">提神</a>
+		              <a href="">杀菌</a>
+		              <a href="">驱蚊</a>
+		              <a href="">药用</a>
+		            </div>
+		        </li>
+				<li class="tese4">环境<span></span>
+		            <div class="tese4-yangtai">
+		              <a href="">阳台</a>
+		              <a href="">窗台</a>
+		              <a href="">庭院</a>
+		              <a href="">楼顶</a>
+		              <a href="">客厅</a>
+		              <a href="">餐厅</a>
+		              <a href="">茶几</a>
+		              <a href="">厨房</a>
+		              <a href="">办公室</a>
+		              <a href="">办公桌</a>
+		              <a href="">书房</a>
+		              <a href="">卧室</a>
+		              <a href="">卫生间</a>
+		              <a href="">园林</a>
+		            </div>
+		        </li>
+				<li class="tese5">花期<span></span>
+		            <div class="tese5-chunji">
+		              <a href="">春季</a>
+		              <a href="">夏季</a>
+		              <a href="">秋季</a>
+		              <a href="">冬季</a>
+		              <a href="">四季</a>
+		              <a href="">不开花</a>
+		              <a href="">喜阳</a>
+		              <a href="">喜阴</a>
+		            </div>
+		        </li>
+				<li class="tese6">难度<span></span>
+		            <div class="tese6-yangzhi">
+		              <a href="">容易养殖</a>
+		              <a href="">留心养殖</a>
+		              <a href="">精心养护</a>
+		              <a href="">专业养护</a>
+		            </div>
+		        </li>
+			</ul>
+			<div class="yetou-r">
+				<a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=qzone&addon=Login&hook=login_sync_other" target="_blank" class="qqlogin">QQ登录</a>
+				<a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=sina&addon=Login&hook=login_sync_other" target="_blank" class="xinlanglogin">新浪微博</a>
+			</div>
+		</div>
+	</div>
+	<!-- 导航条 -->
+	<div class="nav">
+	    <div class="nav1">
+	    	<a class="logo" href="../homepage/homepage.html"><img src="images/logo.gif"></a>
+	    </div>
+	    <div class="nav2">
+	    	<ul>
+  				<li class="shouye1"><a href="../homepage/homepage.html">首页</a></li>
+  				<li class="shouye1"><a href="../huahui/huahui.html">花卉</a></li>
+  				<li class="shouye2"><a href="../huhuashanzhuang/huhuashanzhuang.html">护花山庄</a></li>
+  				<li class="shouye1 sy-current"><a href="../tuku/tuku.html">图库</a></li>
+  				<li class="shouye1"><a href="">日记</a></li>
+			  </ul>
+	    </div>
+	    <div class="nav3">
+		    <div class="search">
+		    	<input type="text" placeholder="搜索花名.帖子.用户" onfocus="this.placeholder=''" onblur="this.placeholder='搜索花名.帖子.用户'">
+	    		<span></span>
+		    </div>
+	    </div>
+	    <div class="nav4">
+	        <span></span>
+	    	<a>发布</a>
+	    </div>
+		<div class="nav5">
+			<a href="#" class="nav5-denglu">登录</a>
+			<a href="#">注册</a>
+		</div>
+	</div>
+	<!-- main 页面整体分类 -->
+	<div class="main">
+		<div class="main-left">
+			<ul class="main-left-five">
+				<li class="tuijian on"><span></span>热门推荐<i class="arrow-in"></i></li>
+				<li class="fengge"><span></span>风格<i></i></li>
+				<li class="kongjian"><span></span>空间<i></i></li>
+				<li class="zhuti"><span></span>主题<i></i></li>
+				<li class="baike"><span></span>百科<i></i></li>
+			</ul>
+			<div class="main-left-list">
+				<ul class="list-on">
+					<li><a href="">绿植</a></li>
+					<li><a href="">水培</a></li>
+					<li><a href="">盆栽</a></li>
+					<li><a href="">多肉</a></li>
+					<li><a href="">迷你盆栽</a></li>
+					<li><a href="">苔藓微景观</a></li>
+					<li><a href="">室内盆栽</a></li>
+					<li><a href="">小型盆栽</a></li>
+					<li><a href="">玻璃瓶植物</a></li>
+					<li><a href="">风景花卉</a></li>
+					<li><a href="">创意盆栽</a></li>
+					<li><a href="">盆花</a></li>
+					<li><a href="">微景观</a></li>
+					<li><a href="">开花</a></li>
+					<li><a href="">多肉微盆栽</a></li>
+					<li><a href="">盆景</a></li>
+					<li><a href="">小清新</a></li>
+					<li><a href="">唯美花卉</a></li>
+					<li><a href="">奇特花草</a></li>
+					<li><a href="">花苗</a></li>
+					<li><a href="">DIY小盆景</a></li>
+					<li><a href="">植物风景</a></li>
+				</ul>
+				<ul>
+					<li><a href="">观赏</a></li>
+					<li><a href="">花朵</a></li>
+					<li><a href="">观花</a></li>
+					<li><a href="">叶子</a></li>
+					<li><a href="">观叶</a></li>
+					<li><a href="">观果</a></li>
+					<li><a href="">净化空气</a></li>
+					<li><a href="">吸甲醛</a></li>
+					<li><a href="">防辐射</a></li>
+					<li><a href="">驱蚊</a></li>
+					<li><a href="">药用</a></li>
+					<li><a href="">春季</a></li>
+					<li><a href="">夏季</a></li>
+					<li><a href="">秋季</a></li>
+					<li><a href="">冬季</a></li>
+					<li><a href="">常绿</a></li>
+				</ul>
+				<ul>
+					<li><a href="">室内绿植</a></li>
+					<li><a href="">家居绿植</a></li>
+					<li><a href="">室内观赏</a></li>
+					<li><a href="">室内盆景</a></li>
+					<li><a href="">室内水培</a></li>
+					<li><a href="">家庭盆栽</a></li>
+					<li><a href="">室内盆栽</a></li>
+					<li><a href="">阳台</a></li>
+					<li><a href="">窗台</a></li>
+					<li><a href="">庭院</a></li>
+					<li><a href="">楼顶花园</a></li>
+					<li><a href="">客厅植物</a></li>
+					<li><a href="">办公室</a></li>
+					<li><a href="">办公室绿植</a></li>
+					<li><a href="">卧室</a></li>
+					<li><a href="">园林</a></li>
+					<li><a href="">室内大盆栽</a></li>
+					<li><a href="">室内小盆栽</a></li>
+				</ul>
+				<ul>
+					<li><a href="">绿植</a></li>
+					<li><a href="">水培</a></li>
+					<li><a href="">玻璃瓶植物</a></li>
+					<li><a href="">盆栽</a></li>
+					<li><a href="">盆景</a></li>
+					<li><a href="">大叶盆景</a></li>
+					<li><a href="">小型盆栽</a></li>
+					<li><a href="">盆花</a></li>
+					<li><a href="">微景观</a></li>
+					<li><a href="">多肉微盆栽</a></li>
+					<li><a href="">苔藓微景观</a></li>
+					<li><a href="">微地形景观</a></li>
+					<li><a href="">迷你盆栽</a></li>
+					<li><a href="">小清新</a></li>
+					<li><a href="">唯美花卉</a></li>
+					<li><a href="">DIY小盆景</a></li>
+					<li><a href="">奇特花草</a></li>
+					<li><a href="">手绘</a></li>
+					<li><a href="">花苗</a></li>
+					<li><a href="">开花</a></li>
+					<li><a href="">创意盆栽</a></li>
+					<li><a href="">婚礼花卉</a></li>
+					<li><a href="">鲜花</a></li>
+				</ul>
+				<ul>
+					<li><a href="">多肉</a></li>
+					<li><a href="">仙人掌</a></li>
+					<li><a href="">兰花</a></li>
+					<li><a href="">木本花卉</a></li>
+					<li><a href="">块根植物</a></li>
+					<li><a href="">宿根花卉</a></li>
+					<li><a href="">蕨类</a></li>
+					<li><a href="">食虫</a></li>
+					<li><a href="">凤梨</a></li>
+					<li><a href="">棕榈</a></li>
+					<li><a href="">四季开花</a></li>
+					<li><a href="">不开花</a></li>
+					<li><a href="">植物根茎</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="main-right">
+			<div class="main-right-lunbo">
+				<ul class="main-lunboin">
+					<li><a href=""><img src="images/tukulunbo1.jpg"></a></li>
+					<li><a href=""><img src="images/tukulunbo2.jpg"></a></li>
+					<li><a href=""><img src="images/tukulunbo3.jpg"></a></li>
+				</ul>
+				<div class="circle">
+					<div class="circlein">
+						<span class="circle-current">1</span>
+						<span>2</span>
+						<span>3</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 热门推荐 -->
+	<div class="rmtj">
+		<h2>热门推荐</h2>
+		<div class="rmtj-left">
+			<ul>
+				<li class="li0"><a href="">绿植</a></li>
+				<li class="li1"><a href="">水培</a></li>
+				<li class="li2"><a href="">盆栽</a></li>
+				<li class="li3"><a href="">多肉</a></li>
+				<li class="li4"><a href="">迷你盆栽</a></li>
+				<li class="li5"><a href=""><span>苔藓微景观</span></a></li>
+				<li class="li6"><a href="">室内盆栽</a></li>
+				<li class="li7"><a href="">小型盆栽</a></li>
+				<li class="li8"><a href=""><span>玻璃瓶植物</span></a></li>
+				<li class="li9"><a href="">风景花卉</a></li>
+				<li class="li10"><a href="">创意盆栽</a></li>
+				<li class="li11"><a href="">盆花</a></li>
+			</ul>
+		</div>
+		<div class="rmtj-right">
+			<ul>
+				<li><a href=""><img src="images/rmtj1.jpg"></a></li>
+				<li><a href=""><img src="images/rmtj2.jpg"></a></li>
+				<li><a href=""><img src="images/rmtj3.jpg"></a></li>
+				<li><a href=""><img src="images/rmtj4.jpg"></a></li>
+				<li><a href=""><img src="images/rmtj5.jpg"></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 风格 -->
+	<div class="fg">
+		<h2>风格</h2>
+		<div class="fg-left">
+			<ul>
+				<li class="li0"><a href="">观赏</a></li>
+				<li class="li1"><a href="">花朵</a></li>
+				<li class="li2"><a href="">观花</a></li>
+				<li class="li3"><a href="">叶子</a></li>
+				<li class="li4"><a href="">观叶</a></li>
+				<li class="li5"><a href="">观果</a></li>
+				<li class="li6"><a href="">净化空气</a></li>
+				<li class="li7"><a href="">吸甲醛</a></li>
+				<li class="li8"><a href="">防辐射</a></li>
+				<li class="li9"><a href="">驱蚊</a></li>
+				<li class="li10"><a href="">药用</a></li>
+				<li class="li11"><a href="">春季</a></li>
+			</ul>
+		</div>
+		<div class="fg-right">
+			<ul>
+				<li><a href=""><img src="images/fg1.jpg"></a></li>
+				<li><a href=""><img src="images/fg2.jpg"></a></li>
+				<li><a href=""><img src="images/fg3.jpg"></a></li>
+				<li><a href=""><img src="images/fg4.jpg"></a></li>
+				<li><a href=""><img src="images/fg5.jpg"></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 空间 -->
+	<div class="kj">
+		<h2>空间</h2>
+		<div class="kj-left">
+			<ul>
+				<li class="li0"><a href="">室内绿植</a></li>
+				<li class="li1"><a href="">家居绿植</a></li>
+				<li class="li2"><a href="">室内观赏</a></li>
+				<li class="li3"><a href="">室内盆景</a></li>
+				<li class="li4"><a href="">室内水培</a></li>
+				<li class="li5"><a href="">家庭盆栽</a></li>
+				<li class="li6"><a href="">室内盆栽</a></li>
+				<li class="li7"><a href="">阳台</a></li>
+				<li class="li8"><a href="">窗台</a></li>
+				<li class="li9"><a href="">庭院</a></li>
+				<li class="li10"><a href="">楼顶花园</a></li>
+				<li class="li11"><a href="">客厅植物</a></li>
+			</ul>
+		</div>
+		<div class="kj-right">
+			<ul>
+				<li><a href=""><img src="images/kj1.jpg"></a></li>
+				<li><a href=""><img src="images/kj2.jpg"></a></li>
+				<li><a href=""><img src="images/kj3.jpg"></a></li>
+				<li><a href=""><img src="images/kj4.jpg"></a></li>
+				<li><a href=""><img src="images/kj5.jpg"></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 主题 -->
+	<div class="zt">
+		<h2>主题</h2>
+		<div class="zt-left">
+			<ul>
+				<li class="li0"><a href="">绿植</a></li>
+				<li class="li1"><a href="">水培</a></li>
+				<li class="li2"><a href=""><span>玻璃瓶植物</span></a></li>
+				<li class="li3"><a href="">盆栽</a></li>
+				<li class="li4"><a href="">盆景</a></li>
+				<li class="li5"><a href="">大叶盆景</a></li>
+				<li class="li6"><a href="">小型盆栽</a></li>
+				<li class="li7"><a href="">盆花</a></li>
+				<li class="li8"><a href="">微景观</a></li>
+				<li class="li9"><a href=""><span>多肉微盆栽</span></a></li>
+				<li class="li10"><a href=""><span>苔藓微景观</span></a></li>
+				<li class="li11"><a href=""><span>微地形景观</span></a></li>
+			</ul>
+		</div>
+		<div class="zt-right">
+			<ul>
+				<li><a href=""><img src="images/zt1.jpg"></a></li>
+				<li><a href=""><img src="images/zt2.jpg"></a></li>
+				<li><a href=""><img src="images/zt3.jpg"></a></li>
+				<li><a href=""><img src="images/zt4.jpg"></a></li>
+				<li><a href=""><img src="images/zt5.jpg"></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 百科 -->
+	<div class="bk">
+		<h2>百科</h2>
+		<div class="bk-left">
+			<ul>
+				<li class="li0"><a href="">多肉</a></li>
+				<li class="li1"><a href="">仙人掌</a></li>
+				<li class="li2"><a href="">兰花</a></li>
+				<li class="li3"><a href="">木本花卉</a></li>
+				<li class="li4"><a href="">块根植物</a></li>
+				<li class="li5"><a href="">宿根花卉</a></li>
+				<li class="li6"><a href="">蕨类</a></li>
+				<li class="li7"><a href="">食虫</a></li>
+				<li class="li8"><a href="">凤梨</a></li>
+				<li class="li9"><a href="">棕榈</a></li>
+				<li class="li10"><a href="">四季开花</a></li>
+				<li class="li11"><a href="">不开花</a></li>
+			</ul>
+		</div>
+		<div class="bk-right">
+			<ul>
+				<li><a href=""><img src="images/bk1.jpg"></a></li>
+				<li><a href=""><img src="images/bk2.jpg"></a></li>
+				<li><a href=""><img src="images/bk3.jpg"></a></li>
+				<li><a href=""><img src="images/bk4.jpg"></a></li>
+				<li><a href=""><img src="images/bk5.jpg"></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 图片放大 -->
+   	<div class="tupianfangda">
+	   	<ul>
+	   		<li class="margin1">
+	   			<img src="images/tpfd1.jpeg">
+	   			<h5>植物墙</h5>
+	   		</li>
+	   		<li class="margin1">
+	   			<img src="images/tpfd2.jpeg">
+	   			<h5>植物墙</h5>
+	   		</li>
+	   		<li class="margin1">
+	   			<img src="images/tpfd3.jpeg">
+	   			<h5>植物租摆报价单</h5>
+	   		</li>
+	   		<li class="margin1">
+	   			<img src="images/tpfd4.jpeg">
+	   			<h5>海棠树价格</h5>
+	   		</li>
+	   		<li class="margin1">
+	   			<img src="images/tpfd5.jpeg">
+	   			<h5>花卉种子公司</h5>
+	   		</li>
+	   		<li class="margin1">
+	   			<img src="images/tpfd6.jpeg">
+	   			<h5>花卉盆景批发</h5>
+	   		</li>
+	   		<li>
+	   			<img src="images/tpfd7.jpeg">
+	   			<h5>园林花盆批发</h5>
+	   		</li>
+	   	</ul>
+   	</div>
+   	<!-- 页脚 -->
+   	<div class="footer">
+   	    <div class="footer-banxin">
+   	    	<div class="footer1">
+	   			<div class="footer1-left">©2013 花卉网 沪ICP备12046703号-5</div>
+	   			<ul>
+	   				<li><a href="">网站地图</a> ·</li>
+	   				<li><a href="">花卉</a> ·</li>
+	   				<li><a href="">花卉大全</a> ·</li>
+	   				<li><a href="">花卉网</a> ·</li>
+	   				<li><a href="">花的种类</a> ·</li>
+	   				<li><a href="">花卉盆景</a> ·</li>
+	   				<li><a href="">室内花卉</a> ·</li>
+	   				<li><a href="">花卉图片及名称大全</a> ·</li>
+	   				<li><a href="">花的图片</a> ·</li>
+	   			</ul>
+   			</div>
+   			<div class="footer2">
+   				护花网(花卉网www.aihuhua.com) 这里是花儿成长的地方，聚焦亿万护花使者，同花儿一起茁壮成长！
+   			</div>
+   	    </div>
+   	</div>
+   	 <!-- 二维码 -->
+    <div class="code">
+      <div class="androidcode">
+        <h2>安卓APP</h2>
+        <span></span>
+      </div>
+      <div class="guanfangcode">
+        <h2>官方网站</h2>
+        <span></span>
+      </div>
+      <div class="weixincode">
+        <h2>微信公众号</h2>
+        <span></span>
+      </div>
+    </div>
+    <!-- 回到顶部按钮 -->
+    <div class="huidaodingbu"> 
+    </div>
+    <!-- 登陆界面 -->
+    <div class="huisebox">
+	</div>
+	<div class="denglujiemian">
+		<div class="denglujiemian-header">
+			登陆护花网
+			<span>x</span>
+		</div>
+		<div class="denglujiemian-content">
+			<div class="dljm-left">
+				<h5>用以下账号直接登录</h5>
+				<div class="qq-xinlang-tunxun">
+					<a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=qzone&addon=Login&hook=login_sync_other" target="_blank" class="qq">QQ账号登录</a>
+					<a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=sina&addon=Login&hook=login_sync_other" target="_blank" class="sina">新浪微博登录</a>
+					<a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=qq&addon=Login&hook=login_sync_other" target="_blank" class="tqq">腾讯微博登录</a>
+				</div>
+			</div>
+			<div class="dljm-right">
+				<p>还没有护花账号?<a href="http://www.aihuhua.com/register">立即注册</a></p>
+				<form>
+					<div class="label">
+						<label>邮箱</label>
+						<input type="text">
+					</div>
+					<div class="label">
+						<label>密码</label>
+						<input type="password">
+					</div>
+					<span class="lock">
+						<input type="checkbox" checked="checked">记住我
+						<font class="line">|</font>
+						<a href="http://www.aihuhua.com/index.php?app=public&mod=Passport&act=findPassword">忘记密码？</a>
+					</span>
+					<br>
+					<a type="submit" class="dengluanniu">登录</a>
+				</form>
+			</div>
+			<div class="dljm-bottom">
+				<span>其他账号登录：</span>
+				<div class="third-party">
+					<ul>
+						<li><a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=sina&addon=Login&hook=login_sync_other" target="_blank" class="fangshi-sina"></a></li>
+						<li><a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=qzone&addon=Login&hook=login_sync_other" target="_blank" class="fangshi-qq"></a></li>
+						<li><a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=qq&addon=Login&hook=login_sync_other" target="_blank" class="fangshi-tunxun"></a></li>
+						<li><a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=renren&addon=Login&hook=login_sync_other" target="_blank" class="fangshi-renren"></a></li>
+						<li><a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=douban&addon=Login&hook=login_sync_other" target="_blank" class="fangshi-tudou"></a></li>
+						<li><a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=taobao&addon=Login&hook=login_sync_other" target="_blank" class="fangshi-taobao"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 悬浮小图标 -->
+	<div class="xuanfubox">
+		<a href="" class="xuanfu-wenxin"></a>
+		<a href="" class="xuanfu-qzone"></a>
+		<a href="" class="xuanfu-tsina"></a>
+		<a href="" class="xuanfu-tqq"></a>
+		<a href="" class="xuanfu-tieba"></a>
+		<a href="" class="xuanfu-kaixinwang"></a>
+		<a href="" class="xuanfu-renren"></a>
+		<a href="" class="xuanfu-douban"></a>
+		<a href="" class="xuanfu-huaban"></a>
+	</div>
+</body>
+</html>
