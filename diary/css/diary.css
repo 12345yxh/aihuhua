@@ -1424,7 +1424,7 @@ element.style {
         display: block;
         margin: 0px;
         padding: 0px;
-        float: none;
+        float: left;
         clear: none;
         overflow: hidden;
         border: 0px;

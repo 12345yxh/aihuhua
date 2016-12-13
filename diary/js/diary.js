@@ -75,7 +75,7 @@ $(document).ready(function(){
          $(".laz1").removeClass("laz11")
       })
       $(window).scroll(function() {
-        if($(window).scrollTop()<4000){
+        if($(window).scrollTop()<3800){
               $(".tupianz").css("display","none")
               $(".laz1").addClass("laz11")
           }else{
