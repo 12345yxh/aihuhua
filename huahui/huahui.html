@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>huahui</title>
+	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="huahui.css">
+	<script type="text/javascript" src="huahui.js"></script>
+</head>
+<body>
+  <!-- 页头 -->
+	<div class="yetou">
+		<div class="yetou1">
+			<ul class="kuaijie">
+			    <li>快捷<span></span>
+				    <div class="yhrj">
+  						<h6><a href=""><i><img src="images/rijitubiao.png"></i>养花日记</a></h6>
+  						<h6><a href="../huhuashanzhuang/huhuashanzhuang.html"><i><img src="images/shanzhuangtubiao.png"></i>护花山庄</a></h6>
+  						<h6><a href="http://www.aihuhua.com/index.php?app=public&mod=App&act=addapp"><i><img src="images/more.png"></i>更多应用</a></h6>
+					 </div>
+			    </li>
+			</ul>
+			<ul class="tese">
+				<li class="tese1">特色<span></span>
+		          <div class="tese1-helantie">
+		            <a href="http://www.aihuhua.com/huahui/helantie.html" target="_blank">荷兰铁</a>
+		            <a href="">金边龙舌</a>
+		            <a href="">花叶鸭脚</a>
+		            <a href="">黑美人</a>
+		            <a href="">金钻蔓绿</a>
+		            <a href="">春羽</a>
+		            <a href="">也门铁</a>
+		            <a href="">龙爪叶</a>
+		            <a href="">玉籫</a>
+		            <a href="">水鳖</a>
+		            <a href="">泽泻</a>
+		            <a href="">菹草</a>
+		          </div>
+        		</li>
+				<li class="tese2">类别<span></span>
+		            <div class="tese2-quweilei">
+		              <a href="http://www.aihuhua.com/hua/quwei/" target="_blank">趣味类</a>
+		              <a href="">芳香类</a>
+		              <a href="">观果类</a>
+		              <a href="">观花类</a>
+		              <a href="">观叶类</a>
+		              <a href="">观茎类</a>
+		              <a href="">节庆类</a>
+		              <a href="">垂吊类</a>
+		              <a href="">果蔬类</a>
+		              <a href="">地被草坪</a>
+		              <a href="">水培类</a>
+		              <a href="">盆栽类</a>
+		            </div>
+		        </li>
+				<li class="tese3">功能<span></span>
+		            <div class="tese3-guanshang">
+		              <a href="http://www.aihuhua.com/hua/guanshang/" target="_blank">观赏</a>
+		              <a href="">净化空气</a>
+		              <a href="">吸甲醛</a>
+		              <a href="">防辐射</a>
+		              <a href="">提神</a>
+		              <a href="">杀菌</a>
+		              <a href="">驱蚊</a>
+		              <a href="">药用</a>
+		            </div>
+		        </li>
+				<li class="tese4">环境<span></span>
+		            <div class="tese4-yangtai">
+		              <a href="http://www.aihuhua.com/hua/yangtai/" target="_blank">阳台</a>
+		              <a href="">窗台</a>
+		              <a href="">庭院</a>
+		              <a href="">楼顶</a>
+		              <a href="">客厅</a>
+		              <a href="">餐厅</a>
+		              <a href="">茶几</a>
+		              <a href="">厨房</a>
+		              <a href="">办公室</a>
+		              <a href="">办公桌</a>
+		              <a href="">书房</a>
+		              <a href="">卧室</a>
+		              <a href="">卫生间</a>
+		              <a href="">园林</a>
+		            </div>
+		        </li>
+				<li class="tese5">花期<span></span>
+		            <div class="tese5-chunji">
+		              <a href="http://www.aihuhua.com/hua/chunji/" target="_blank">春季</a>
+		              <a href="">夏季</a>
+		              <a href="">秋季</a>
+		              <a href="">冬季</a>
+		              <a href="">四季</a>
+		              <a href="">不开花</a>
+		              <a href="">喜阳</a>
+		              <a href="">喜阴</a>
+		            </div>
+		        </li>
+				<li class="tese6">难度<span></span>
+		            <div class="tese6-yangzhi">
+		              <a href="http://www.aihuhua.com/hua/rongyi/" target="_blank">容易养殖</a>
+		              <a href="">留心养殖</a>
+		              <a href="">精心养护</a>
+		              <a href="">专业养护</a>
+		            </div>
+		        </li>
+			</ul>
+			<div class="yetou-r">
+				<a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=qzone&addon=Login&hook=login_sync_other" target="_blank" class="qqlogin">QQ登录</a>
+				<a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=sina&addon=Login&hook=login_sync_other" target="_blank" class="xinlanglogin">新浪微博</a>
+			</div>
+		</div>
+	</div>
+	<!-- 导航条 -->
+	<div class="nav">
+	    <div class="nav1">
+	    	<a class="logo" href="../homepage/homepage.html"><img src="images/logo.gif"></a>
+	    </div>
+	    <div class="nav2">
+	    	<ul>
+  				<li class="shouye1"><a href="../homepage/homepage.html">首页</a></li>
+  				<li class="shouye1 sy-current"><a href="../huahui/huahui.html">花卉</a></li>
+  				<li class="shouye2"><a href="../huhuashanzhuang/huhuashanzhuang.html">护花山庄</a></li>
+  				<li class="shouye1"><a href="../tuku/tuku.html">图库</a></li>
+  				<li class="shouye1"><a href="">日记</a></li>
+			  </ul>
+	    </div>
+	    <div class="nav3">
+		    <div class="search">
+		    	<input type="text" placeholder="搜索花名.帖子.用户" onfocus="this.placeholder=''" onblur="this.placeholder='搜索花名.帖子.用户'">
+	    		<span></span>
+		    </div>
+	    </div>
+	    <div class="nav4">
+	        <span></span>
+	    	<a>发布</a>
+	    </div>
+		<div class="nav5">
+			<a href="#" class="nav5-denglu">登录</a>
+			<a href="#">注册</a>
+		</div>
+	</div>
+	<!-- 花卉大全 -->
+	<div class="huahuidaquan">
+		<span class="huahuidaquan1"><a href="huahui.html">花卉大全</a></span>
+		<span class="huahuidaquan2"><a href="huahuileibie.html">花卉类别</a></span>
+	</div>
+	<!-- 花卉类别 -->
+    <div class="huahuileibie">
+    	<ul class="leibie">
+    		<h2>花卉类别</h2>
+    		<li><a href="http://www.aihuhua.com/hua/quwei/" target="_blank">趣味类</a></li>
+    		<li><a href="">芳香类</a></li>
+    		<li><a href="">观果类</a></li>
+    		<li><a href="">观花类</a></li>
+    		<li><a href="">观叶类</a></li>
+    		<li><a href="">观茎类</a></li>
+    		<li><a href="">节庆类</a></li>
+    		<li><a href="">垂吊类</a></li>
+    		<li><a href="">果蔬类</a></li>
+    		<li><a href="">地被草坪</a></li>
+    		<li><a href="">水培类</a></li>
+    		<li><a href="">盆栽类</a></li>
+    	</ul>
+    	<ul class="gongneng">
+    		<h2>花卉功能</h2>
+    		<li><a href="http://www.aihuhua.com/hua/guanshang/" target="_blank">观赏</a></li>
+    		<li><a href="">净化空气</a></li>
+    		<li><a href="">吸甲醛</a></li>
+    		<li><a href="">防辐射</a></li>
+    		<li><a href="">提神</a></li>
+    		<li><a href="">杀菌</a></li>
+    		<li><a href="">驱蚊</a></li>
+    		<li><a href="">药用</a></li>
+    	</ul>
+    	<ul class="huanjing">
+    		<h2>应用环境</h2>
+    		<li><a href="http://www.aihuhua.com/hua/yangtai/" target="_blank">阳台</a></li>
+    		<li><a href="">窗台</a></li>
+    		<li><a href="">庭院</a></li>
+    		<li><a href="">楼顶</a></li>
+    		<li><a href="">客厅</a></li>
+    		<li><a href="">餐厅</a></li>
+    		<li><a href="">茶几</a></li>
+    		<li><a href="">厨房</a></li>
+    		<li><a href="">办公室</a></li>
+    		<li><a href="">办公桌</a></li>
+    		<li><a href="">书房</a></li>
+    		<li><a href="">卧室</a></li>
+    		<li><a href="">卫生间</a></li>
+    		<li><a href="">园林</a></li>
+    	</ul>
+    	<ul class="huaqi">
+    		<h2>盛花期/习性</h2>
+    		<li><a href="http://www.aihuhua.com/hua/chunji/" target="_blank">春季</a></li>
+    		<li><a href="">夏季</a></li>
+    		<li><a href="">秋季</a></li>
+    		<li><a href="">冬季</a></li>
+    		<li><a href="">四季</a></li>
+    		<li><a href="">不开花</a></li>
+    		<li><a href="">喜阳</a></li>
+    		<li><a href="">喜阴</a></li>
+    	</ul>
+    	<ul class="nandu">
+    		<h2>养护难度</h2>
+    		<li><a href="http://www.aihuhua.com/hua/rongyi/" target="_blank">容易养殖</a></li>
+    		<li><a href="">留心养殖</a></li>
+    		<li><a href="">精心养护</a></li>
+    		<li><a href="">专业养护</a></li>
+    	</ul>
+    </div>
+   	<!-- 瀑布流头部 -->
+   	<div class="pubuliuheader">
+   		<h1>花卉大全</h1>
+   		<i>
+       <div class="xiangjie">
+          <strong>花卉大全</strong>
+          <br>
+          <br>
+          通俗地讲，“花”是植物的繁殖器官，是指姿态优美、色彩鲜艳、气味香馥的观赏植物，“卉”是草的总称。习惯上往往把有观赏价值的灌木和可以盆栽的小乔木包括在内，统称为“花卉”。
+          <br>
+          花卉网为你收集花卉图片及名称大全，包括：花卉图片大全、花卉图片及名称、室内花卉图片大全、盆景花卉图片大全、多肉植物花卉图片大全、花卉知识大全、园艺花卉大全、阳台花卉大全、窗台花卉大全、客厅花卉大全、办公桌花卉大全、庭院花卉大全、卧室花卉大全、茶几花卉大全、书房花卉大全、能吸收室内毒气的花卉品种大全、及各类植物的种植知识、花卉养殖方法等各类花卉信息。
+          <br>
+          <br>
+          花开花又落，春去春又来，
+          <br>
+          也许，你曾与那朵花相遇，可是你却叫不出它的名字；
+          <br>
+          也许，你曾听到过一朵花的名字，可是你却想不起它的模样；
+          <br>
+          也许，翘首，凝眸枝头的那一抹嫣红，花依然盛开，可是你却还在等待；
+          <br>
+          也许，春的到来，只为种下一片花海，可是你却为不知花名而继续着无奈，舍不得离开；
+          <br>
+          也许...
+          <br>
+          还在想，那些年我们一起寻找的花卉图片及名称大全吗；
+          <br>
+          还在想，你拍的花卉图片上那朵墙角独自开的花永不褪去的容颜吗；
+          <br>
+          还在想，曾经去花卉园却因丝毫不懂绿色植物养护大全及各类植物的种植知识而对别人羡慕不已吗；
+          <br>
+          还在想，三月，陌上花开，姹紫嫣红，双燕斜飞，绿竹萧疏，掩映着几树桃花。放眼望去，一片片嫩绿，一点点粉红，一簇簇灿黄，瞬间晕染成一幅水墨画卷。却不知花如何开，叶如何来吗；
+          <br>
+          还在想...
+          <br>
+          来花卉网吧，这里为你展现万千花卉图片、花卉名称大全、花卉养殖方法及花卉养护知识大全，让你感受又一个春的到
+          <br>
+          <br>
+          以下是花卉网为你提供的花卉内容大全和花卉图片大全，让你认识更多的趣味类花卉、芳香类花卉、观果类花卉、观花类花卉、观叶类花卉、节庆类花卉、水培类花卉等各类花卉信息。
+          <br>
+          <br>
+          花卉网是你学习花卉栽培大全和了解花卉图片及名称大全的好助手！！！
+        </div> 
+      </i>
+   	</div>
+   	<!-- 瀑布流 -->
+   	<div class="pubuliu">
+   	    <div class="box">
+   	    	<ul class="box-zuixinhuahui">
+   	    		<h2>最新花卉</h2>
+   	    		<li><a href="">荷兰铁</a></li>
+   	    		<li><a href="">金边龙舌兰</a></li>
+   	    		<li><a href="">花叶鸭脚木</a></li>
+   	    		<li><a href="">黑美人</a></li>
+   	    		<li><a href="">金钻蔓绿绒</a></li>
+   	    		<li><a href="">春羽</a></li>
+   	    		<li><a href="">也门铁</a></li>
+   	    		<li><a href="">龙爪叶</a></li>
+   	    		<li><a href="">玉簪</a></li>
+   	    		<li><a href="">水鳖</a></li>
+   	    		<li><a href="">泽泻</a></li>
+   	    		<li><a href="">菹草</a></li>
+   	    		<li><a href="">紫堇</a></li>
+   	    		<li><a href="">荸荠</a></li>
+   	    		<li><a href="">紫背万年青</a></li>
+   	    		<li><a href="">皱叶冷水花</a></li>
+   	    		<li><a href="">蔓性风铃花</a></li>
+   	    		<li><a href="">蟆叶秋海棠</a></li>
+   	    		<li><a href="">宫灯长寿花</a></li>
+   	    		<li><a href="">水晶掌</a></li>
+   	    	</ul>
+   	    	<ul class="box-remenhuahui">
+   	    		<h2>热门花卉排行榜</h2>
+   	    		<li><a href="">莲花竹</a></li>
+   	    		<li><a href="">铜钱草</a></li>
+   	    		<li><a href="">山地玫瑰</a></li>
+   	    		<li><a href="">竹子</a></li>
+   	    		<li><a href="">发财树</a></li>
+   	    		<li><a href="">木槿花</a></li>
+   	    		<li><a href="">满天星花</a></li>
+   	    		<li><a href="">兰花</a></li>
+   	    		<li><a href="">生石花</a></li>
+   	    		<li><a href="">绿萝</a></li>
+   	    		<li><a href="">郁金香</a></li>
+   	    		<li><a href="">罂粟花</a></li>
+   	    		<li><a href="">猴面小龙兰</a></li>
+   	    		<li><a href="">金枝玉叶</a></li>
+   	    		<li><a href="">蔷薇</a></li>
+   	    		<li><a href="">蓝石莲</a></li>
+   	    		<li><a href="">牛油果</a></li>
+   	    		<li><a href="">君子兰</a></li>
+   	    		<li><a href="">大丽花</a></li>
+   	    		<li><a href="">光棍树</a></li>
+   	    	</ul>
+   	    </div>
+   	    <div class="box">
+   	    	<p><img src="images/1.jpg"></p>
+   	    	<p class="box-title">金边龙舌兰</p>
+   	    	<p class="box-bieming">别名：金边莲，金边假菠萝</p>
+   	    	<p class="jieshuo">金边龙舌兰为多年生常绿草本。为龙舌兰科植物金边龙舌兰的叶...</p>
+   	    </div>
+   		<div class="box">
+   	    	<p><img src="images/2.jpg"></p>
+   	    	<p class="box-title">荷兰铁</p>
+   	    	<p class="box-bieming">别名：巨丝兰，象脚丝兰，无刺丝兰</p>
+   	    	<p class="jieshuo">荷兰铁是常绿木本植物，在原产地（北美温暖地区）株高可达1...</p>
+   	    </div>
+   	    <div class="box">
+   	    	<p><img src="images/3.jpg"></p>
+   	    	<p class="box-title">海仙报春</p>
+   	    	<p class="box-bieming">别名：平瓣报春花，雁打巴</p>
+   	    	<p class="jieshuo">海仙报春（学名：Primula helodoxa Bal...</p>
+   	    </div>
+   		<div class="box">
+   	    	<p><img src="images/4.jpg"></p>
+   	    	<p class="box-title">也门铁</p>
+   	    	<p class="box-bieming">别名：</p>
+   	    	<p class="jieshuo">也门铁为龙舌兰科，龙血树属植物。本植物的栽培介质用肥沃壤...</p>
+   	    </div>
+   	    <div class="box">
+   	    	<p><img src="images/5.jpg"></p>
+   	    	<p class="box-title">海仙花</p>
+   	    	<p class="box-bieming">别名：朝鲜锦带，花关门，柴门关柴，临</p>
+   	    	<p class="jieshuo">海仙花为忍冬科锦带花属下的一个种。花1朵至4朵组成伞房花...</p>
+   	    </div>
+   	    <div class="box">
+   	    	<p><img src="images/6.jpg"></p>
+   	    	<p class="box-title">菹草</p>
+   	    	<p class="box-bieming">别名：虾藻，虾草，麦黄草</p>
+   	    	<p class="jieshuo">菹草又叫：虾藻、虾草、麦黄草。眼子菜科，眼子菜属。单子叶...</p>
+   	    </div>
+   	    <div class="box">
+   	    	<p><img src="images/7.jpg"></p>
+   	    	<p class="box-title">金钻蔓绿绒</p>
+   	    	<p class="box-bieming">别名：喜树蕉，金钻，翡翠宝石</p>
+   	    	<p class="jieshuo">金钻蔓绿绒又名金钻，观叶植物，原产南美洲，为热带和亚热带...</p>
+   	    </div>
+   	    <div class="box">
+   	    	<p><img src="images/8.jpg"></p>
+   	    	<p class="box-title">盒子草</p>
+   	    	<p class="box-bieming">别名：合子草，黄丝藤，葫篓棵子</p>
+   	    	<p class="jieshuo">盒子草为葫芦科盒子草属下的一个变种。也称合子草，其中文命...</p>
+   	    </div>
+   	    <div class="box">
+   	    	<p><img src="images/9.jpg"></p>
+   	    	<p class="box-title">慈姑</p>
+   	    	<p class="box-bieming">别名：剪刀草，燕尾草，茨菰</p>
+   	    	<p class="jieshuo">茨菰是多年生草本植物，生在水田里，叶子像箭头，开白花。地...</p>
+   	    </div>
+   	    <div class="box">
+   	    	<p><img src="images/10.jpg"></p>
+   	    	<p class="box-title">黑美人</p>
+   	    	<p class="box-bieming">别名：斜纹粗肋草，斜纹亮丝草花</p>
+   	    	<p class="jieshuo">黑美人（学名：Aglaonema spp）属天南星科多年...</p>
+   	    </div>
+   	    <div class="box">
+   	    	<p><img src="images/11.jpg"></p>
+   	    	<p class="box-title">水鳖</p>
+   	    	<p class="box-bieming">别名：马尿花，芣菜</p>
+   	    	<p class="jieshuo">水鳖又名马尿花、芣菜，多年生（稀一年生）水生飘浮草本或沉...</p>
+   	    </div>
+   	    <div class="box">
+   	    	<p><img src="images/12.jpg"></p>
+   	    	<p class="box-title">泽泻</p>
+   	    	<p class="box-bieming">别名：水泽，如意花</p>
+   	    	<p class="jieshuo">泽泻是多年生水生或沼生草本。全株有毒，地下块茎毒性较大。...</p>
+   	    </div>
+   	    <div class="box">
+   	    	<p><img src="images/13.jpg"></p>
+   	    	<p class="box-title">龙爪叶</p>
+   	    	<p class="box-bieming">别名：脱辟木，大七叶莲</p>
+   	    	<p class="jieshuo">龙爪叶是五加科大藤本，初为直立灌木或小乔木，后分枝攀援而...</p>
+   	    </div>
+   	    <div class="box">
+   	    	<p><img src="images/14.jpg"></p>
+   	    	<p class="box-title">直立百部</p>
+   	    	<p class="box-bieming">别名：药虱药，一窝虎</p>
+   	    	<p class="jieshuo">直立百部（拉丁学名：Stemona sessilifol...</p>
+   	    </div>
+   	    <div class="box">
+   	    	<p><img src="images/15.jpg"></p>
+   	    	<p class="box-title">长鞭红景天</p>
+   	    	<p class="box-bieming">别名：宽叶红景天，竖枝景天</p>
+   	    	<p class="jieshuo">长鞭红景天为景天科红景天属的植物。分布于不丹、克什米尔地...</p>
+   	    </div>
+   	    <div class="box">
+   	    	<p><img src="images/16.jpg"></p>
+   	    	<p class="box-title">博落回</p>
+   	    	<p class="box-bieming">别名：勃逻回,勃勒回,菠萝筒,大叶</p>
+   	    	<p class="jieshuo">博落回为罂粟科，多年生直立草本植物，基部木质化，乳黄色浆...</p>
+   	    </div>
+   	    <div class="box">
+   	    	<p><img src="images/17.jpg"></p>
+   	    	<p class="box-title">大花鸡肉参</p>
+   	    	<p class="box-bieming">别名：</p>
+   	    	<p class="jieshuo">大花鸡肉参（变种）为紫葳科多年生草本植物，无茎，高30-...</p>
+   	    </div>
+   	    <div class="box">
+   	    	<p><img src="images/18.jpg"></p>
+   	    	<p class="box-title">白雪公主</p>
+   	    	<p class="box-bieming">别名：</p>
+   	    	<p class="jieshuo">白雪公主为万年青属植物，叶面有不同的斑纹镶嵌 ，颇有美丽...</p>
+   	    </div>
+   	    <div class="box">
+   	    	<p><img src="images/19.jpg"></p>
+   	    	<p class="box-title">匍枝毛茛</p>
+   	    	<p class="box-bieming">别名：伏生毛茛,匐枝毛茛,鸭爪芹,鸭</p>
+   	    	<p class="jieshuo">匍枝毛茛别名伏生毛茛、匐枝毛茛、鸭爪芹、 鸭巴掌、鸭爪子...</p>
+   	    </div>
+   	    <div class="box">
+   	    	<p><img src="images/20.jpg"></p>
+   	    	<p class="box-title">皱叶冷水花</p>
+   	    	<p class="box-bieming">别名：虾蟆草</p>
+   	    	<p class="jieshuo">皱叶冷水花又名虾蟆草 荨麻科 冷水花属，分布哥斯达黎加、...</p>
+   	    </div>
+   	    <div class="box">
+   	    	<p><img src="images/21.jpg"></p>
+   	    	<p class="box-title">繁穗苋</p>
+   	    	<p class="box-bieming">别名：天雪米,鸦谷,老鸦谷</p>
+   	    	<p class="jieshuo">繁穗苋为苋科植物，高20-80厘米，有时达1.3米；茎直...</p>
+   	    </div>
+   	    <div class="box">
+   	    	<p><img src="images/22.jpg"></p>
+   	    	<p class="box-title">斑叶堇菜</p>
+   	    	<p class="box-bieming">别名：天蹄</p>
+   	    	<p class="jieshuo">斑叶堇菜为多年生草本；属堇菜科堇菜属的植物。 斑叶堇菜...</p>
+   	    </div>
+   	    <div class="box">
+   	    	<p><img src="images/23.jpg"></p>
+   	    	<p class="box-title">东野菰</p>
+   	    	<p class="box-bieming">别名：野菰</p>
+   	    	<p class="jieshuo">东野菰，中药名。为列当科植物东野菰Aeginetia o...</p>
+   	    </div>
+   	    <div class="box">
+   	    	<p><img src="images/24.jpg"></p>
+   	    	<p class="box-title">北黄花菜</p>
+   	    	<p class="box-bieming">别名：黄花苗子</p>
+   	    	<p class="jieshuo">北黄花菜为萱草科萱草属的植物。分布在欧洲、俄罗斯以及中国...</p>
+   	    </div>
+   	    <div class="box">
+   	    	<p><img src="images/25.jpg"></p>
+   	    	<p class="box-title">短毛独活</p>
+   	    	<p class="box-bieming">别名：东北牛防风,大叶芹</p>
+   	    	<p class="jieshuo">短毛独活（学名：Heracleum moellendor...</p>
+   	    </div>
+   	    <div class="box">
+   	    	<p><img src="images/26.jpg"></p>
+   	    	<p class="box-title">多被银莲花</p>
+   	    	<p class="box-bieming">别名：两头尖,红被银莲花</p>
+   	    	<p class="jieshuo">多被银莲花为多年生草本，植株高10-30厘米。根状茎横走...</p>
+   	    </div>
+   	    <div class="box">
+   	    	<p><img src="images/27.jpg"></p>
+   	    	<p class="box-title">菥蓂</p>
+   	    	<p class="box-bieming">别名：遏蓝菜,败酱草,犁头草</p>
+   	    	<p class="jieshuo">菥蓂是一年生草本，高9-60厘米，无毛；茎直立，不分枝或...</p>
+   	    </div>
+   	    <div class="box">
+   	    	<p><img src="images/28.jpg"></p>
+   	    	<p class="box-title">华北耧斗菜</p>
+   	    	<p class="box-bieming">别名：五铃花（山西中阳）,紫霞耧</p>
+   	    	<p class="jieshuo">华北耧斗菜是草本植物，根圆柱形，粗约1.5厘米。茎高40...</p>
+   	    </div>
+   	    <div class="box">
+   	    	<p><img src="images/29.jpg"></p>
+   	    	<p class="box-title">紫背万年青</p>
+   	    	<p class="box-bieming">别名：紫锦兰,蚌花,紫蒀,紫兰,红面</p>
+   	    	<p class="jieshuo">紫背万年青（Rhoeo discolor Hance. ...</p>
+   	    </div>
+   	    <div class="box">
+   	    	<p><img src="images/30.jpg"></p>
+   	    	<p class="box-title">多被银莲花</p>
+   	    	<p class="box-bieming">别名：两头尖,红被银莲花</p>
+   	    	<p class="jieshuo">多被银莲花为多年生草本，植株高10-30厘米。根状茎横走...</p>
+   	    </div>
+   	    <div class="box">
+   	    	<p><img src="images/31.jpg"></p>
+   	    	<p class="box-title">瓣蕊唐松草</p>
+   	    	<p class="box-bieming">别名：马尾黄连,多花蔷薇</p>
+   	    	<p class="jieshuo">瓣蕊唐松草为多年生草本植物，植株全部无毛。茎高20-80...</p>
+   	    </div>
+   	</div>
+   	<!-- 按钮 -->
+   	<div class="anniu">
+   		<a class="anniuse1">1</a>
+   		<a class="anniuse2">2</a>
+   		<a class="anniuse2">3</a>
+   		<a class="anniuse2">4</a>
+   		<a class="anniuse2">5</a>
+   		<a class="anniuse2">..64</a>
+   		<a class="anniuse2">下一页</a>
+   	</div>
+   	<!-- 图片放大 -->
+   	<div class="tupianfangda">
+	   	<ul>
+	   		<li class="margin1">
+	   			<img src="images/zhiwuqiang.jpeg">
+	   			<h5>植物墙</h5>
+	   		</li>
+	   		<li class="margin1">
+	   			<img src="images/naihansugen.jpeg">
+	   			<h5>耐寒宿根花卉</h5>
+	   		</li>
+	   		<li class="margin1">
+	   			<img src="images/zhiwuzubai.jpeg">
+	   			<h5>植物租摆报价单</h5>
+	   		</li>
+	   		<li class="margin1">
+	   			<img src="images/fangweibiaoqian.jpeg">
+	   			<h5>防伪标签</h5>
+	   		</li>
+	   		<li class="margin1">
+	   			<img src="images/huahuizhongzi.jpeg">
+	   			<h5>花卉种子公司</h5>
+	   		</li>
+	   		<li class="margin1">
+	   			<img src="images/huahuipenjing.jpeg">
+	   			<h5>花卉盆景批发</h5>
+	   		</li>
+	   		<li>
+	   			<img src="images/shineihuacao.jpeg">
+	   			<h5>室内花草大全</h5>
+	   		</li>
+	   	</ul>
+   	</div>
+   	<!-- 页脚 -->
+   	<div class="footer">
+   	    <div class="footer-banxin">
+   	    	<div class="footer1">
+	   			<div class="footer1-left">©2013 花卉网 沪ICP备12046703号-5</div>
+	   			<ul>
+	   				<li><a href="">网站地图</a> ·</li>
+	   				<li><a href="">花卉</a> ·</li>
+	   				<li><a href="">花卉大全</a> ·</li>
+	   				<li><a href="">花卉网</a> ·</li>
+	   				<li><a href="">花的种类</a> ·</li>
+	   				<li><a href="">花卉盆景</a> ·</li>
+	   				<li><a href="">室内花卉</a> ·</li>
+	   				<li><a href="">花卉图片及名称大全</a> ·</li>
+	   				<li><a href="">花的图片</a> ·</li>
+	   			</ul>
+   			</div>
+   			<div class="footer2">
+   				护花网(花卉网www.aihuhua.com) 这里是花儿成长的地方，聚焦亿万护花使者，同花儿一起茁壮成长！
+   			</div>
+   	    </div>
+   	</div>
+    <!-- 二维码 -->
+    <div class="code">
+      <div class="androidcode">
+        <h2>安卓APP</h2>
+        <span></span>
+      </div>
+      <div class="guanfangcode">
+        <h2>官方网站</h2>
+        <span></span>
+      </div>
+      <div class="weixincode">
+        <h2>微信公众号</h2>
+        <span></span>
+      </div>
+    </div>
+    <!-- 回到顶部按钮 -->
+    <div class="huidaodingbu"> 
+    </div>
+    <!-- 登陆界面 -->
+    <div class="huisebox">
+  	</div>
+  	<div class="denglujiemian">
+    	<div class="denglujiemian-header">
+      	登陆护花网
+      	<span>x</span>
+    	</div>
+    	<div class="denglujiemian-content">
+      	<div class="dljm-left">
+	        <h5>用以下账号直接登录</h5>
+	        <div class="qq-xinlang-tunxun">
+	          <a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=qzone&addon=Login&hook=login_sync_other" target="_blank" class="qq">QQ账号登录</a>
+	          <a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=sina&addon=Login&hook=login_sync_other" target="_blank" class="sina">新浪微博登录</a>
+	          <a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=qq&addon=Login&hook=login_sync_other" target="_blank" class="tqq">腾讯微博登录</a>
+	        </div>
+      	</div>
+      	<div class="dljm-right">
+	        <p>还没有护花账号?<a href="http://www.aihuhua.com/register">立即注册</a></p>
+	        <form>
+	          <div class="label">
+	            <label>邮箱</label>
+	            <input type="text">
+	          </div>
+	          <div class="label">
+	            <label>密码</label>
+	            <input type="password">
+	          </div>
+	          <span class="lock">
+	            <input type="checkbox" checked="checked">记住我
+	            <font class="line">|</font>
+	            <a href="http://www.aihuhua.com/index.php?app=public&mod=Passport&act=findPassword">忘记密码？</a>
+	          </span>
+          	  <br>
+          	  <a type="submit" class="dengluanniu">登录</a>
+        	</form>
+      	</div>
+      	<div class="dljm-bottom">
+	        <span>其他账号登录：</span>
+	        <div class="third-party">
+	          <ul>
+	            <li><a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=sina&addon=Login&hook=login_sync_other" target="_blank" class="fangshi-sina"></a></li>
+	            <li><a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=qzone&addon=Login&hook=login_sync_other" target="_blank" class="fangshi-qq"></a></li>
+	            <li><a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=qq&addon=Login&hook=login_sync_other" target="_blank" class="fangshi-tunxun"></a></li>
+	            <li><a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=renren&addon=Login&hook=login_sync_other" target="_blank" class="fangshi-renren"></a></li>
+	            <li><a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=douban&addon=Login&hook=login_sync_other" target="_blank" class="fangshi-tudou"></a></li>
+	            <li><a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=taobao&addon=Login&hook=login_sync_other" target="_blank" class="fangshi-taobao"></a></li>
+	          </ul>
+	        </div>
+      	</div>
+    </div>
+  </div>
+  <!-- 悬浮小图标 -->
+  <div class="xuanfubox">
+    <a href="" class="xuanfu-wenxin"></a>
+    <a href="" class="xuanfu-qzone"></a>
+    <a href="" class="xuanfu-tsina"></a>
+    <a href="" class="xuanfu-tqq"></a>
+    <a href="" class="xuanfu-tieba"></a>
+    <a href="" class="xuanfu-kaixinwang"></a>
+    <a href="" class="xuanfu-renren"></a>
+    <a href="" class="xuanfu-douban"></a>
+    <a href="" class="xuanfu-huaban"></a>
+  </div>
+  <!-- 养花知识 左边的文字-->
+  <div class="yhzs">
+  	<div class="yhzs-left">
+	  	<div class="yhzs-jiantou">
+	  	</div>
+	  	<div class="yhzs-wenzi">
+	  		养花知识	
+	  	</div>
+  	</div>
+  	<!-- 养花知识右边的图片 -->
+	  <div class="yhzs-right-tupian">
+	  	<div class="yhzs-main">
+	  		<div class="yhzs-main-body">
+	  			<ul>
+	  				<li>
+	  					<a href="http://www.aihuhua.com/wenzhang/1120.html" target="_blank"><img src="images/yhzs1.jpeg"></a>
+	  					<a href="http://www.aihuhua.com/wenzhang/1120.html" target="_blank" class="yhzs-xiafangwenzi">不同方位的植物选</a>
+	  				</li>
+	  				<li>
+	  					<a href="http://www.aihuhua.com/wenzhang/79.html" target="_blank"><img src="images/yhzs2.jpeg"></a>
+	  					<a href="http://www.aihuhua.com/wenzhang/79.html" target="_blank" class="yhzs-xiafangwenzi">番茄与土豆的爱的结晶</a>
+	  				</li>
+	  				<li>
+	  					<a href="http://www.aihuhua.com/wenzhang/1198.html" target="_blank"><img src="images/yhzs3.jpeg"></a>
+	  					<a href="http://www.aihuhua.com/wenzhang/1198.html" target="_blank" class="yhzs-xiafangwenzi">diy染色花朵</a>
+	  				</li>
+	  				<li>
+	  					<a href="http://www.aihuhua.com/riji/177-637.html?action=gt" target="_blank"><img src="images/yhzs4.jpeg"></a>
+	  					<a href="http://www.aihuhua.com/riji/177-637.html?action=gt" target="_blank" class="yhzs-xiafangwenzi">求助</a>
+	  				</li>
+	  				<li>
+	  					<a href="http://www.aihuhua.com/wenzhang/1138.html" target="_blank"><img src="images/yhzs5.jpeg"></a>
+	  					<a href="http://www.aihuhua.com/wenzhang/1138.html" target="_blank" class="yhzs-xiafangwenzi">多肉植物</a>
+	  				</li>
+	  			</ul>
+	  		</div>
+	  		<div class="yhzs-main-footer">
+	  		    <a href="http://tuijian.baidu.com/" target="_blank">百度推荐</a>
+	  		</div>
+	  	</div>
+	  	<div class="yhzs1">
+		  	<div class="yhzs1-left">
+			  	<div class="yhzs1-jiantou">
+			  	</div>
+			  	<div class="yhzs1-wenzi">
+			  		养花知识	
+			  	</div>
+		  	</div>
+		</div>
+	  </div>
+  </div>
+</body>
+</html>

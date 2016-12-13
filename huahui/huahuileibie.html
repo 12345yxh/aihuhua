@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>huahuileibie</title>
+	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="huahuileibie.css">
+	<script type="text/javascript" src="huahuileibie.js"></script>
+</head>
+<body>
+	<!-- 页头 -->
+	<div class="yetou">
+		<div class="yetou1">
+			<ul class="kuaijie">
+			    <li>快捷<span></span>
+				    <div class="yhrj">
+  						<h6><a href=""><i><img src="images/rijitubiao.png"></i>养花日记</a></h6>
+  						<h6><a href="../huhuashanzhuang/huhuashanzhuang.html"><i><img src="images/shanzhuangtubiao.png"></i>护花山庄</a></h6>
+  						<h6><a href="http://www.aihuhua.com/index.php?app=public&mod=App&act=addapp"><i><img src="images/more.png"></i>更多应用</a></h6>
+					 </div>
+			    </li>
+			</ul>
+			<ul class="tese">
+				<li class="tese1">特色<span></span>
+		          <div class="tese1-helantie">
+		            <a href="">荷兰铁</a>
+		            <a href="">金边龙舌</a>
+		            <a href="">花叶鸭脚</a>
+		            <a href="">黑美人</a>
+		            <a href="">金钻蔓绿</a>
+		            <a href="">春羽</a>
+		            <a href="">也门铁</a>
+		            <a href="">龙爪叶</a>
+		            <a href="">玉籫</a>
+		            <a href="">水鳖</a>
+		            <a href="">泽泻</a>
+		            <a href="">菹草</a>
+		          </div>
+        		</li>
+				<li class="tese2">类别<span></span>
+		            <div class="tese2-quweilei">
+		              <a href="">趣味类</a>
+		              <a href="">芳香类</a>
+		              <a href="">观果类</a>
+		              <a href="">观花类</a>
+		              <a href="">观叶类</a>
+		              <a href="">观茎类</a>
+		              <a href="">节庆类</a>
+		              <a href="">垂吊类</a>
+		              <a href="">果蔬类</a>
+		              <a href="">地被草坪</a>
+		              <a href="">水培类</a>
+		              <a href="">盆栽类</a>
+		            </div>
+		        </li>
+				<li class="tese3">功能<span></span>
+		            <div class="tese3-guanshang">
+		              <a href="">观赏</a>
+		              <a href="">净化空气</a>
+		              <a href="">吸甲醛</a>
+		              <a href="">防辐射</a>
+		              <a href="">提神</a>
+		              <a href="">杀菌</a>
+		              <a href="">驱蚊</a>
+		              <a href="">药用</a>
+		            </div>
+		        </li>
+				<li class="tese4">环境<span></span>
+		            <div class="tese4-yangtai">
+		              <a href="">阳台</a>
+		              <a href="">窗台</a>
+		              <a href="">庭院</a>
+		              <a href="">楼顶</a>
+		              <a href="">客厅</a>
+		              <a href="">餐厅</a>
+		              <a href="">茶几</a>
+		              <a href="">厨房</a>
+		              <a href="">办公室</a>
+		              <a href="">办公桌</a>
+		              <a href="">书房</a>
+		              <a href="">卧室</a>
+		              <a href="">卫生间</a>
+		              <a href="">园林</a>
+		            </div>
+		        </li>
+				<li class="tese5">花期<span></span>
+		            <div class="tese5-chunji">
+		              <a href="">春季</a>
+		              <a href="">夏季</a>
+		              <a href="">秋季</a>
+		              <a href="">冬季</a>
+		              <a href="">四季</a>
+		              <a href="">不开花</a>
+		              <a href="">喜阳</a>
+		              <a href="">喜阴</a>
+		            </div>
+		        </li>
+				<li class="tese6">难度<span></span>
+		            <div class="tese6-yangzhi">
+		              <a href="">容易养殖</a>
+		              <a href="">留心养殖</a>
+		              <a href="">精心养护</a>
+		              <a href="">专业养护</a>
+		            </div>
+		        </li>
+			</ul>
+			<div class="yetou-r">
+				<a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=qzone&addon=Login&hook=login_sync_other" target="_blank" class="qqlogin">QQ登录</a>
+				<a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=sina&addon=Login&hook=login_sync_other" target="_blank" class="xinlanglogin">新浪微博</a>
+			</div>
+		</div>
+	</div>
+	<!-- 导航条 -->
+	<div class="nav">
+	    <div class="nav1">
+	    	<a class="logo" href="../homepage/homepage.html"><img src="images/logo.gif"></a>
+	    </div>
+	    <div class="nav2">
+	    	<ul>
+  				<li class="shouye1"><a href="../homepage/homepage.html">首页</a></li>
+  				<li class="shouye1 sy-current"><a href="../huahui/huahui.html">花卉</a></li>
+  				<li class="shouye2"><a href="../huhuashanzhuang/huhuashanzhuang.html">护花山庄</a></li>
+  				<li class="shouye1"><a href="../tuku/tuku.html">图库</a></li>
+  				<li class="shouye1"><a href="">日记</a></li>
+			  </ul>
+	    </div>
+	    <div class="nav3">
+		    <div class="search">
+		    	<input type="text" placeholder="搜索花名.帖子.用户" onfocus="this.placeholder=''" onblur="this.placeholder='搜索花名.帖子.用户'">
+	    		<span></span>
+		    </div>
+	    </div>
+	    <div class="nav4">
+	        <span></span>
+	    	<a>发布</a>
+	    </div>
+		<div class="nav5">
+			<a href="#" class="nav5-denglu">登录</a>
+			<a href="#">注册</a>
+		</div>
+	</div>
+	<!-- 花卉大全 -->
+	<div class="huahuidaquan">
+		<span class="huahuidaquan1"><a href="huahui.html">花卉大全</a></span>
+		<span class="huahuidaquan2"><a href="huahuileibie.html">花卉类别</a></span>
+	</div>
+	<!-- 花的种类 -->
+	<div class="huadezhonglei">
+		<span class="huadezhonglei1">花的种类</span>
+		<i>
+			<div class="wenhaoxiangqing">
+				<strong>花卉百科</strong>"-"
+				<strong>花卉种类</strong>"：包含"
+				<b>花的种类</b>"、"
+				<b>花的分类</b>"、"
+				<b>花的类别</b>"、"
+				<b>花卉种类</b>"、"
+				<b>花卉分类</b>"、"
+				<b>花卉类别等相关花卉分类信息</b>
+				<br>
+				<br>
+			    花卉的种类极多，范围广泛，植物花卉的种类不仅包括有花的植物，还有苔藓和蕨类植物。仅生长于我国就有三四千种，植物花卉的分类方法也有多种，其栽培应用方式也多种多样。
+			    <br>
+			    因此，花卉分类由于依据不同，有多种分类方法，如可以根据花卉的形态特征、生态条件、观赏用途来分类。最为普遍的是按其形态特征把花卉分为草本花卉和木本花卉两大类。另外依据生态习性分类，这种分类方法是依据花卉植物的生活型与生态习性进行的分类，应用最为广泛。
+			    <br>
+                <br>
+				首先，以下按生态习性进行花卉种类分类：
+				<br>
+			    一、露地花卉
+			    <br>
+			    就是在自然条件下，完成全部生长过程，不需保护地栽培。
+			    <br>
+			    露地花卉依其生活史可分为五类。
+			    <br>
+                ⒈ 一年生花卉：在一个生长季内完成生活史的植物，这种花卉大多原产于热带及亚热带，不耐寒，一般当年春季播种，夏秋即发棵开花、结实，但一到冬季，遇霜就会枯死。即从播种到开花、结实、枯死均在一个生长季内完成。一般春天播种、夏秋生长，开花结实，然后枯死，因此一年生花卉又称春播花卉。如风仙花、鸡冠花、百日草、半支莲、万寿菊等。
+                <br>
+                ⒉ 二年生花卉：在两个生长季内完成生活史的花卉，这类花卉秋季播种，于次年春夏成长、开花、结实，一般在炎夏时果实成熟后即行枯死。这类花喜欢较低的温度，不耐夏季高温，它是跨越两年完成其生命周期的。当年只生长营养器官，越年后开花、结实、死亡。这类花卉，一般秋天播种，次年春季开花。因此，这类花卉常称为秋播花卉。如五彩石竹、紫罗兰、羽衣甘蓝、瓜叶菊等。
+                <br>
+                ⒊ 多年生花卉：个体寿命超过两年的，能多次开花结实。
+                根据地下部分形态变化，多年生花卉又可分两类：
+                ⑴宿根花卉：地下部分形态正常，不发生变态的。为多年生花卉，它的个体寿命超过两年，一次栽植后，能连续多年生长。在寒冷地区，地上部茎叶全部枯死，而埋在地下的茎根部分仍然存活，在休眠状态下越过寒冬，到第二年春季气候转暖时，它又从地下根茎部重发新芽，生出新的茎叶，再次开花、结实。如芍药、玉簪、萱草、菊花、天竺葵、玉替、置草、彩叶草、非洲菊、薄荷、马兰、一枝黄花、万年青、兰花、文竹、鹤望兰等。 
+                <br>
+                ⑵球根花卉：地下部分变态肥大者，也属于多年生花卉，它的地下部分具有较大的变态茎或变态根，呈球形、块状或鳞状，故称为球根。球根花卉按它的栽培时间的不同，又可分为春植球根花卉和秋植。球根花卉两种。 按其地下根、茎变态的不同，又可分为球茎类、块茎类、块根类和鳞茎类4种。
+                <br>
+                根据其变态形状，球根花卉又分为以下五大类：
+                <br>
+                ①鳞茎类：地下茎呈鱼鳞片状。外被纸质外皮的叫有皮鳞茎，如水仙、郁金香、朱顶红。鳞片的外面没有外皮包被的叫无皮鳞茎，如百合。
+                <br>
+                ②球茎类：地下茎呈球形或扁球形，外面有革质外皮。如唐菖蒲、香雪兰等。
+                <br>
+                ③根茎类：地下茎肥大呈根状，上面有明显的节，新芽着生在分枝的顶端，如美人蕉、荷花、睡莲、玉簪等。
+                <br>
+                ④块茎类：地下茎呈不规则的块状或条状，如马蹄莲、仙客来、大岩桐、晚香玉等。
+                <br>
+                ⑤块根类：地下主根肥大呈块状，根系从块根的末端生出，如大丽花。
+                <br>
+                ⒋ 水生花卉：在水中或沼泽地生长的花卉，这类花卉完全生长在水中。常见如水葱、荷花、睡莲、凤眼花等。
+                <br>
+                ⒌ 岩生花卉：指耐旱性强，适合在岩石园栽培的花卉。常在园林中选用。一般为宿根性或基部木质化的亚灌木类植物，还有蕨类等好阴湿的花卉。
+                <br>
+                <br>
+                二、温室花卉 
+                <br>
+                指原产热带、亚热带及南方温暖地区的花卉。在北方寒冷地区栽培必须在温室内培养，或冬季需要在温室内保护越冬。
+                <br>
+                温室花卉可分为以下几类：
+                <br>
+                ⒈ 一、二年生花卉：如瓜叶菊、蒲包花、香豌豆等。
+                <br>
+                ⒉ 宿根花卉：如非洲菊、君子兰等。 
+                <br>
+                ⒊ 球根花卉：如仙客来、朱顶红、大岩桐、马蹄莲、花叶芋等。
+                <br>
+                ⒋ 兰科植物依其生态习性又分为：
+                <br> 
+                ①地生兰类：如春兰、葱兰、剑兰等。
+                <br>
+                ②附生兰类：如石斛、万代兰、兜兰等。
+                <br>
+                ⒌ 多浆植物：指茎叶具有发达的贮水组织，呈肥厚多汁变态状的植物。亦属多年生花卉，其特点是茎叶肥厚，叶退化或变态为针状，体内储有大盆水分，性喜暖湿，耐干燥环境。包括仙人掌科、景天科、大戟科、菊科、凤梨科、龙舌兰科等科植物。这类花卉如令箭荷花、粉八宝、石莲花、昙花、玉树及各种类型的仙人科植物等。
+                <br>
+                ⒍ 蕨类植物
+                <br>
+                根据观赏方式不同， 蕨类植物又可分为下面四类：
+                <br>
+                ①庭园绿化蕨类：如翠云草、桫椤。其中桫椤又称树蕨，是最大的蕨类植物，高可达10多米。它是古老类群，在我国属濒危种，为我国一级保护植物。另外，槐叶萍，满江红为水面绿化好材料。
+                <br>
+                ②盆栽观叶蕨类植物：如石松、乌蕨、蜈蚣草、铁线蕨等。其中石松、肾蕨、铁蕨为重要切花配叶材料。
+                <br>
+                ③垂吊蕨类植物：如肾蕨、巢蕨等。
+                <br>
+                ④山石盆景蕨类植物：如卷柏、团扇蕨。其中团扇蕨是蕨类植物中形体最小的，仅有几厘米大小。
+                <br>
+                ⒎ 食虫植物：如猪笼草、瓶子草等。在有些切花艺术中，常用来作艺术插花材料。
+                <br>
+                ⒏ 风梨科植物：如水塔花、风梨等。
+                <br>
+                ⒐ 棕桐科植物：如蒲葵、棕竹、袖珍椰子等观叶花卉。
+                <br>
+                10.花木类：有一品红、变叶木等。
+                <br>
+                11.水生花卉：如王莲、热带睡莲等。
+                <br>
+                <br>
+                其次，依园林用途进行花卉种类分类
+                <br>
+                1.花坛花卉
+                <br> 
+                指可以用于布置花坛的一、二年生露地花卉。比如春天开花的有三色堇、石竹；夏天花坛花卉常栽种凤仙花、雏菊；秋天选用一串红、万寿菊、九月菊等；冬天花坛内可适当布置羽衣甘蓝等。
+                <br>
+                2.盆栽花卉：是以盆栽形式装饰室内及庭园的盆花。如木瓜海棠、扶桑、文竹、一品红、金桔等。
+                <br>
+                3.室内花卉：指通过C4途径来进行光合作用暗反应过程的一类花卉。一般观叶类植物都可作为室内观赏花卉。如发财树、巴西木、绿巨人、绿箩、五彩玉米等。
+                <br>
+                4.切花花卉： ⑴宿根类：如非洲菊、满天星、鹤望兰。 ⑵球根类：百合、郁金香、马蹄莲、香雪兰等。 ⑶木本类切花：如桃花、梅花、牡丹、月季、玫瑰等。
+                <br>
+                5.观叶花卉：主要根据观赏部位来定的。如绿巨人、铁树、蕨类植物等。
+                <br>
+                6.荫棚花卉：在园林设计中，亭台树荫下生长的花卉。麦冬草、红花草以及蕨类植物，皆可作为荫棚花卉。
+                <br>
+                7.阳性花卉：需要充足的阳光照射才能开花的花卉，叫做喜阳性花卉。喜阳性花卉适合在全光照、强光照下生长。如果光照不足，就会生长发育不良，开花晚或不能开花，且花色不鲜，香气不浓。
+                <br>
+                喜阳性花卉，如：
+                <br>
+               （1）春季花卉：梅花、水仙、迎春、桃花、白兰玉、紫玉兰、琼花、贴梗海棠、木瓜海棠、垂丝海棠、牡丹、芍药、丁香、月季、玫瑰、紫荆、锦带花、连翘、云南黄馨、余雀花、仙客来、风信子、郁金香、马蹄莲、长春菊、天竺葵、报春花、瓜叶菊、矮牵牛、虞美人、金鱼草、美女樱等。
+                <br>
+               （2）夏秋季花卉：白玉花、茉莉、米兰、九里香、木本夜来香、桂花、广玉兰、扶桑、木芙蓉、木槿、紫薇、夹竹桃、三角花、菠萝花、六月雪、大丽花、五色梅、美人蕉、向日葵、蜀葵、扶郎花、鸡蛋花、红花葱兰、翠菊、一串红、鸡冠花、凤仙花、半枝莲、雁来红、雏菊、万寿菊、菊花、荷花、睡莲等。
+                <br>
+               （3）冬季花卉：蜡梅、一品红、银柳、茶梅、小苍兰等。
+                <br>
+               （4）果木类：蒙山木瓜、银杏、石榴、金橘、橘、葡萄、枇杷、枣树、柿、猕猴桃、无花果、柯粑、火棘、冬珊瑚等。
+                <br>
+               （5）藤本类：紫藤、凌霄、蔷薇花、木香、金银花、爬山虎、牵牛花、茑萝等。
+                <br>
+               （6）观叶类：五针松、黑松、锦松、雪松、龙柏、枷罗木、杨柳、柽柳、红枫、棕搁、大叶黄杨、橡皮树、苏铁、龙血树、芭蕉、变叶木、假叶树、彩叶草等。
+                <br>
+               （7）多肉类：仙人掌、三角住、仙人球、仙人山、宝石花、绒毛掌等。
+                <br>
+                再次，依经济用途进行花卉种类分类
+                <br>
+                1.药用花卉：例如牡丹、芍药、桔梗、牵牛、麦冬、鸡冠花、凤仙花、百合、贝母及石斛等为重要的药用植物，另外，金银花、菊花、荷花等均为常见的中药材。
+                <br>
+                2.香料花卉：香花在食品，轻工业等方面用途很广。如桂花可作食品香料和酿酒，茉莉、白兰等可熏制茶叶，菊花可制高级食品和菜肴，白兰、玫瑰、水仙花、腊梅等可提取香精，其中玫瑰花中提取的玫瑰油，在国际市场上被誉为“液体黄金”，其价值比黄金还贵，在市场上仅一个玫瑰花蕾就值6分钱。
+                <br>
+                3.食用花卉：利用花的叶或花朵直接食用。如百合，既可作切花，又可食用；菊花脑、黄花菜既可用作绿化苗木，又可以食用。
+                <br>
+                <br>
+                最后，依据花卉原产地进行花卉种类分类
+                <br>
+                一、气候型
+                <br> 
+                1.中国气候型：又称大陆东岸气候型。这一气候型又因冬季的气温高低不同，又分为温暖型与冷凉型：
+                <br>
+                ①温暖型（低纬度地区） 例如：中国水仙、中国石竹、山茶、杜鹃、百合等。
+                <br>
+                ②冷凉型（高纬度地区） 例如：菊花、芍药、荷包牡丹、贴梗海棠。
+                <br>
+                2.欧洲气候型：又称大陆西岸气候型，如：三色堇、雏菊、羽衣甘蓝、紫罗兰等。这类花卉在我们地区一般作二年生栽培，即夏秋播种，翌春开花。
+                <br>
+                3.地中海气候型：因为这些地区夏季气候干燥、多年生花卉常成球根形态。如：风信子、小苍兰、郁金香、仙客来、酢浆草等。
+                <br>
+                4.墨西哥气候型：又称热带高原气候型，见于热带及亚热带高山地区。我国云南省也属于这种类型。其原产花卉有：大丽花、一品红、万寿菊、云南山茶、月季等。
+                <br>
+                5.热带气候型：原产热带的花卉，在温带需要温室内栽培，一年生草花可以在露地无霜期时栽培：
+                <br>
+                ①原产亚洲、非洲及大洋洲热带著名花卉有：鸡冠花、虎尾兰、彩叶草、变叶木等。
+                <br>
+                ②原产中美洲和南美洲热带著名花卉有：花烛、长春花、美人蕉、牵牛等。
+                <br>
+                6. 沙漠气候型：这类地区多为不毛之地的沙漠，主要是多浆类植物。
+                <br>
+                ①芦荟 ：沭阳农林局科技园种植的品种主要有库拉索、斑纹、木立、元江、皂质等
+                <br>
+                ②仙人掌：有普通观赏仙人掌、食用仙人掌两类。
+                <br>
+                ③光棍树：又称绿玉树。原产南非热带，我国西南、华南可露地栽培。
+                <br>
+                ④龙舌兰：常见绿化树种的剑麻就是同属植物。
+                <br>
+                7.寒带气候型：主要分布阿拉斯加，西伯利亚一带。这些地区气候冬季漫长而严寒，夏季短促而凉爽。植物生长期只有2-3个月。由于这类气候夏季白天天长、风大，因此，植物低矮，生长缓慢，常成垫状。主要花卉有：细叶百合、龙胆、雪莲。
+                <br>
+                <br>
+                二、依自然分布进行花卉种类分类
+                <br>
+                分为热带花卉、温带花卉、寒带花卉、高山花卉、水生花卉、岩生花卉、沙漠花卉。 “花卉”有狭义和广义两种解释。狭义的“花卉”是指具有观赏价值的草本植物，如菊花、凤仙花等。广义的“花卉”指的是凡是花、茎、叶、果或根在形态或色彩上具有观赏价值的植物。所以广义的花卉不单包括了草本植物，还包括了乔木、灌木、藤本以及地被植物等。
+                <br>
+                <br> 
+                三、依需要水分多少分类
+                <br>
+                1.耐旱性花卉:如仙人掌、景天、玉树、百莲花、虎尾兰、芦荟及大花马齿苋等。这些花卉适应干旱、炎热的生长环境，叶常发生变态，有的甚至退化，花卉体内又具有贮藏水分的结构，因而能忍耐干旱。浇水量一定要少，应掌握“宁干勿湿”原则，以保持盆土偏干为好，否则就容易引起根或茎等器官腐烂，严重时还会导致死亡。
+                <br>
+                2.半耐旱性花卉:如梅花、山茶、杜鹃、腊梅、天竺葵、天门冬及松柏等植物。这些花卉植物叶片多呈草质或蜡质状，或枝叶呈针状。在浇水时应掌握“干透浇透”的原则，即等盆土表层全部干了才浇水，浇就要浇透。
+                <br>
+                3.中生性花卉:大多数种类的花卉是属于这一类型的。如石榴、月季、茉莉、扶桑、米兰、鹤望兰、君子兰、观赏竹及一二年生草花、宿根花卉等。它们在湿润的土壤中生长发育良好，在过湿或过干的土壤中生长不良，因此在浇水上应掌握“见干见湿”的原则。所谓“见干”即盆的表层土壤颜色变浅时就要浇水；“见湿”即每次浇水正好把全部盆土都浇透，不能浇成上湿下干的“半截水”。这样的浇水方法，既能满足这类花卉生长发育所需要的水分，又能保证根部呼吸作用所需要的氧气，有利于花卉茁壮生长。
+                <br>
+                4.湿生性花卉:如广东万年青、风车草、马蹄莲、虎耳草、蒿蒲、龟背竹、观赏蕨等。它们要求生长的环境应有大量的水分，才能生长发育良好，因此浇水应掌握“宁湿勿干”的原则，但不能积水，否则常会使枝叶枯萎致伤。 水生性花卉:如荷花、睡莲、风眼莲等，它们的根或茎等必须在水中才能生存，因此，一定要创造条件，满足它们的要求。
+                <br>
+                <br>
+                四、花卉的分类
+                <br>
+                按生物学特性分类不同的花卉，其生物特性各不相同。它们对光照、温度、水分等环境条件的要求也不同，习惯上常根据这些不同，把花卉人以下四种类型：
+                <br>
+                1.喜阳性和耐阴性花卉
+                <br>
+                ①喜阳性花卉 象月季、茉莉、石榴等大多数花卉，它们需要充足的阳光照射，这种花卉叫做喜阳花卉。如果光照不足，就会生长发育不良，开发晚或不能开发，且花色不鲜，香气不浓。
+                <br>
+                ②耐阴性花卉 象玉簪花、绣球花、杜鹃花等，只需要软弱的散射光即能良好地生长，叫做耐阴性花卉。如果把它们放在阳光下经常暴晒，反而不能政党地生长发育。
+                <br>
+                2.耐寒性和喜温性花卉
+                <br> 
+                ①耐寒性花卉 象月季花、金盏花、石竹花、石榴等花卉，一般能耐零下3－5°C的短时间低温影响，冬季它们能在室外越冬。
+                <br> 
+                ②喜温性花卉 象大丽化、美人蕉、秋海棠等花卉，一般要在15－30°C的湿度条件下,才能正常生长以育，它们不耐低温，冬季需要在温度较高的室内越冬。
+                <br>
+                3.长日照、短日照和中性花卉
+                <br>
+                ①长日照花卉 象八仙花、瓜叶菊等，每天需要日照时间在12个小时以上，叫做长日照花卉。如果不能满足这一特定条件的要求，就不会现蕾开发。
+                <br>
+                ②短日照花卉 象菊花、一串红等，每天需要12个小时以内的日照，经过一段时间后，就能现蕾开发。如果日照时间过长，就不会现蕾开发。
+                <br> 
+                ③中性花卉 象天竺葵、石竹花、四海棠、月季花等，对每天日照的时间长短并不敏感，不论是长日照或短日照情况下，都会正常现蕾开发，叫做中性花卉。
+                <br>
+                4.水生、旱生和润土类花卉
+                <br>
+                ①水生花卉 象睡莲，一定要生活在水中，才能正常生长以育，叫做水生花卉。但因为科技的发展水培花卉出现在在中国市场正在发展，水培花卉是采用现代生物工程技术，运用物理、化学、生物工程手段，对普通的植物、花卉进行驯化，使其能在水中长期生长，而形成的新一代高科技农业项目。水培花卉，上面花香满室，下面鱼儿畅游，卫生、环保、省事，所以水培花卉又被称为“懒人花卉”。
+                <br> 
+                ②旱生花卉 象仙人掌类、景天类等，只需要很少的水分就能正常生长以育，叫做旱生花卉。
+                <br>
+                ③润土花卉 象月季花、栀子花、桂花、大丽花、石竹花等大多数花卉，要求生长在湿度较大，排水良好的土壤里，叫做润土花卉。润土花卉在生长季节里，每天消耗水分较多，必须注意及时向土壤里补充水分，保持温润状态。
+                <br>
+                <br>
+                以下是花卉网(护花网www.aihuhua.com)花的种类介绍，包含：花的种类、花的分类、花的类别、花卉种类、花卉分类、花卉类别、花卉品种大全、花卉分类大全、花卉百科、花卉种类频道，为花痴们提供精确的花卉分类和花卉种类，及完善的花卉百科信息！！！
+			</div>
+		</i>
+		<span class="huadezhonglei2">花卉网花卉百科共收录2194种花卉，这里是花儿成长的地方，是花的海洋，和你一起尽情地享受百花吐蕊的芬芳，同花儿一起茁壮成长</span>
+	</div>
+	<!-- 搜索查询 -->
+	<div class="searchbox">
+		<form>
+			<input type="text" placeholder="请输入花卉名称" class="text" onfocus="this.placeholder=''" onblur="this.placeholder='请输入花卉名称'">
+			<input type="submit" value="查询" class="button">
+		</form>
+		<label class="search-label">
+			热门花卉：
+			<a href="">向日葵</a>
+			<a href="">发财树</a>
+			<a href="">多肉观音莲</a>
+			<a href="">冰灯玉露</a>
+			<a href="">碧光环</a>
+			<a href="">蝴蝶兰</a>
+			<a href="">常青藤</a>
+			<a href="">金钱树</a>
+			<a href="">富贵树</a>
+		</label>
+	</div>
+	<!-- 正文内容 -->
+	<div class="content">
+		<div class="content-left">
+			<ul class="content-leftul">
+				<li>
+					<a href=""><img src="images/hhzl1.jpg"></a>
+                    <h2 class="title"><a href="">草本花卉</a></h2>
+                    <p class="list">
+                    	<a href="">野亚麻</a>
+                    	<a href="">蔓金腰</a>
+                    	<br>
+                    	<a href="">海仙报春</a>
+                    	<a href="">海仙花</a>
+                    </p>
+				</li>
+				<li>
+					<a href=""><img src="images/hhzl2.jpg"></a>
+                    <h2 class="title"><a href="">木本花卉</a></h2>
+                    <p class="list">
+                    	<a href="">金边龙舌兰</a>
+                    	<a href="">荷兰铁</a>
+                    	<a href="">也门铁</a>
+                    	<a href="">龙爪叶</a>
+                    </p>
+				</li>
+				<li>
+					<a href=""><img src="images/hhzl3.jpg"></a>
+                    <h2 class="title"><a href="">球根花卉</a></h2>
+                    <p class="list">
+                    	<a href="">头花千金藤</a>
+                    	<br>
+                    	<a href="">荷兰鸢尾</a>
+                    	<a href="">金铁锁</a>
+                    </p>
+				</li>
+				<li>
+					<a href=""><img src="images/hhzl4.jpg"></a>
+                    <h2 class="title"><a href="">兰科花卉</a></h2>
+                    <p class="list">
+                    	<a href="">大花线柱兰</a>
+                    	<br>
+                    	<a href="">广布红门兰</a>
+                    	<a href="">带唇兰</a>
+                    </p>
+				</li>
+				<li>
+					<a href=""><img src="images/hhzl5.jpg"></a>
+                    <h2 class="title"><a href="">宿根花卉</a></h2>
+                    <p class="list">
+                    	<a href="">花叶玉簪</a>
+                    	<br>
+                    	<a href="">串叶松香草</a>
+                    </p>
+				</li>
+				<li>
+					<a href=""><img src="images/hhzl6.jpg"></a>
+                    <h2 class="title"><a href="">仙人掌</a></h2>
+                    <p class="list">
+                    	<a href="">樱麒麟</a>
+                    	<a href="">龟甲牡丹</a>
+                    	<br>
+                    	<a href="">帝冠</a>
+                    	<a href="">露美玉</a>
+                    	<a href="">红梅殿</a>
+                    </p>
+				</li>
+				<li>
+					<a href=""><img src="images/hhzl7.jpg"></a>
+                    <h2 class="title"><a href="">多肉多浆植物</a></h2>
+                    <p class="list">
+                    	<a href="">水晶掌</a>
+                    	<a href="">多肉白檀</a>
+                    	<br>
+                    	<a href="">皇冠龙舌兰</a>
+                    	<a href="">姬牡丹</a>
+                    </p>
+				</li>
+				<li>
+					<a href=""><img src="images/hhzl8.jpg"></a>
+                    <h2 class="title"><a href="">草坪与地被植物</a></h2>
+                    <p class="list">
+                    	<a href="">野牛草</a>
+                    	<a href="">狐尾三叶草</a>
+                    	<br>
+                    	<a href="">白车轴草</a>
+                    	<a href="">结缕草</a>
+                    </p>
+				</li>
+				<li>
+					<a href=""><img src="images/hhzl9.jpg"></a>
+                    <h2 class="title"><a href="">水生花卉</a></h2>
+                    <p class="list">
+                    	<a href="">菹草</a>
+                    	<a href="">慈姑</a>
+                    	<a href="">水鳖</a>
+                    	<a href="">泽泻</a>
+                    	<a href="">红睡莲</a>
+                    	<a href="">牛毛毡</a>
+                    </p>
+				</li>
+				<li>
+					<a href=""><img src="images/hhzl10.jpg"></a>
+                    <h2 class="title"><a href="">蕨类植物</a></h2>
+                    <p class="list">
+                    	<a href="">卤蕨</a>
+                    	<a href="">连珠蕨</a>
+                    	<a href="">扇蕨</a>
+                    	<br>
+                    	<a href="">紫萁</a>
+                    	<a href="">过沟菜蕨</a>
+                    </p>
+				</li>
+				<li>
+					<a href=""><img src="images/hhzl11.jpg"></a>
+                    <h2 class="title"><a href="">苔藓植物</a></h2>
+                    <p class="list">
+                    	<a href="">螺旋藓苔</a>
+                    	<a href="">垂枝藓</a>
+                    	<br>
+                    	<a href="">地钱</a>
+                    	<a href="">莫丝</a>
+                    	<a href="">鹿角苔</a>
+                    </p>
+				</li>
+				<li>
+					<a href=""><img src="images/hhzl12.jpg"></a>
+                    <h2 class="title"><a href="">岩生花卉</a></h2>
+                    <p class="list">
+                    	<a href="">白头翁</a>
+                    	<a href="">岩生庭荠</a>
+                    	<br>
+                    	<a href="">岩生忍冬</a>
+                    	<a href="">费菜</a>
+                    </p>
+				</li>
+				<li>
+					<a href=""><img src="images/hhzl13.jpg"></a>
+                    <h2 class="title"><a href="">食虫植物</a></h2>
+                    <p class="list">
+                    	<a href="">露松</a>
+                    	<a href="">锦地罗</a>
+                    	<a href="">猪笼草</a>
+                    	<a href="">鹦鹉瓶子草</a>
+                    </p>
+				</li>
+				<li>
+					<a href=""><img src="images/hhzl14.jpg"></a>
+                    <h2 class="title"><a href="">凤梨科植物</a></h2>
+                    <p class="list">
+                    	<a href="">巢凤梨</a>
+                    	<a href="">黄歧花凤梨</a>
+                    	<a href="">五彩红星</a>
+                    	<a href="">紫凤梨</a>
+                    </p>
+				</li>
+				<li>
+					<a href=""><img src="images/hhzl15.jpg"></a>
+                    <h2 class="title"><a href="">棕榈科植物</a></h2>
+                    <p class="list">
+                    	<a href="">鱼尾葵</a>
+                    	<a href="">鱼尾葵</a>
+                    	<a href="">红槟榔</a>
+                    	<a href="">王棕</a>
+                    	<a href="">皇后葵</a>
+                    	<a href="">董棕</a>
+                    </p>
+				</li>
+				<li>
+					<a href=""><img src="images/hhzl16.jpg"></a>
+                    <h2 class="title"><a href="">藻类植物</a></h2>
+                    <p class="list">
+                    	<a href="">宫廷草</a>
+                    	<a href="">水榕</a>
+                    	<a href="">绿球藻</a>
+                    	<a href="">狐尾藻</a>
+                    	<a href="">绿宫廷</a>
+                    </p>
+				</li>
+				<li>
+					<a href=""><img src="images/hhzl17.jpg"></a>
+                    <h2 class="title"><a href="">地衣植物</a></h2>
+                    <p class="list">
+                    	<a href="">尸香魔芋</a>
+                    	<a href="">飘带兜兰</a>
+                    	<a href="">松萝</a>
+                    </p>
+				</li>
+			</ul>
+			<div class="huahui-xfl">
+				<h2>花卉小分类</h2>
+				<ul>
+				    <h3>草本花卉:</h3>
+					<li><a href="">一年生草本花卉</a></li>
+					<li><a href="">二年生草本花卉</a></li>
+					<li><a href="">多年生草本花卉</a></li>
+				</ul>
+				<ul>
+				    <h3>木本花卉:</h3>
+					<li><a href="">乔木花卉</a></li>
+					<li><a href="">灌木花卉</a></li>
+					<li><a href="">藤本花卉</a></li>
+				</ul>
+				<ul>
+					<h3>球根花卉:</h3>
+					<li><a href="">球茎花卉</a></li>
+					<li><a href="">鳞茎花卉</a></li>
+					<li><a href="">块茎花卉</a></li>
+					<li><a href="">根茎花卉</a></li>
+					<li><a href="">块根花卉</a></li>
+				</ul>
+			</div>
+			<div class="desctext">
+				以上是花卉网(护花网www.aihuhua.com)为你提供的花的种类(花卉百科)的花卉类别信息，包括草本花卉、木本花卉、球根花卉、兰科花卉、宿根花卉、仙人掌、多肉多浆植物、草坪与地被植物、水生花卉、蕨类植物、苔藓植物、岩生花卉、食虫植物、凤梨科植物、棕榈科植物、藻类植物、地衣植物、花卉分类，你还可以查看花卉网更多<a href="">花卉</a>信息 
+			</div>
+		</div>
+		<div class="content-right">
+			<div class="remenhuahui">
+				<h2>花卉网热门花卉</h2>
+				<ul>
+					<li><a href=""><img src="images/rmhuahui1.jpg">莲花竹</a></li>
+					<li><a href=""><img src="images/rmhuahui2.jpg">铜钱草</a></li>
+					<li><a href=""><img src="images/rmhuahui3.jpeg">山地玫瑰</a></li>
+					<li><a href=""><img src="images/rmhuahui4.jpg">竹子</a></li>
+					<li><a href=""><img src="images/rmhuahui5.jpg">发财树</a></li>
+					<li><a href=""><img src="images/rmhuahui6.jpg">木槿花</a></li>
+					<li><a href=""><img src="images/rmhuahui7.jpg">满天星花</a></li>
+					<li><a href=""><img src="images/rmhuahui8.jpg">兰花</a></li>
+					<li><a href=""><img src="images/rmhuahui9.jpeg">生石花</a></li>
+					<li><a href=""><img src="images/rmhuahui10.jpg">绿萝</a></li>
+					<li><a href=""><img src="images/rmhuahui11.jpg">郁金香</a></li>
+					<li><a href=""><img src="images/rmhuahui12.jpg">罂粟花</a></li>
+					<li><a href=""><img src="images/rmhuahui13.jpg">猴面小龙兰</a></li>
+					<li><a href=""><img src="images/rmhuahui14.jpg">金枝玉叶</a></li>
+					<li><a href=""><img src="images/rmhuahui15.jpg">蔷薇</a></li>
+					<li><a href=""><img src="images/rmhuahui16.jpg">蓝石莲</a></li>
+					<li><a href=""><img src="images/rmhuahui17.jpg">牛油果</a></li>
+					<li><a href=""><img src="images/rmhuahui18.jpg">君子兰</a></li>
+					<li><a href=""><img src="images/rmhuahui19.jpg">大丽花</a></li>
+					<li><a href=""><img src="images/rmhuahui20.jpg">光棍树</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 图片放大 -->
+   	<div class="tupianfangda">
+	   	<ul>
+	   		<li class="margin1">
+	   			<img src="images/tpfd1.jpeg">
+	   			<h5>草花种子</h5>
+	   		</li>
+	   		<li class="margin1">
+	   			<img src="images/tpfd2.jpeg">
+	   			<h5>花卉租摆</h5>
+	   		</li>
+	   		<li class="margin1">
+	   			<img src="images/tpfd3.jpeg">
+	   			<h5>育苗基质</h5>
+	   		</li>
+	   		<li class="margin1">
+	   			<img src="images/tpfd4.jpeg">
+	   			<h5>app界面设计</h5>
+	   		</li>
+	   		<li class="margin1">
+	   			<img src="images/tpfd5.jpeg">
+	   			<h5>成都花卉</h5>
+	   		</li>
+	   		<li class="margin1">
+	   			<img src="images/tpfd6.jpeg">
+	   			<h5>白蚁</h5>
+	   		</li>
+	   		<li>
+	   			<img src="images/tpfd7.jpeg">
+	   			<h5>番茄种子</h5>
+	   		</li>
+	   	</ul>
+   	</div>
+   	<!-- 页脚 -->
+   	<div class="footer">
+   	    <div class="footer-banxin">
+   	    	<div class="footer1">
+	   			<div class="footer1-left">©2013 花卉网 沪ICP备12046703号-5</div>
+	   			<ul>
+	   				<li><a href="">网站地图</a> ·</li>
+	   				<li><a href="">花卉</a> ·</li>
+	   				<li><a href="">花卉大全</a> ·</li>
+	   				<li><a href="">花卉网</a> ·</li>
+	   				<li><a href="">花的种类</a> ·</li>
+	   				<li><a href="">花卉盆景</a> ·</li>
+	   				<li><a href="">室内花卉</a> ·</li>
+	   				<li><a href="">花卉图片及名称大全</a> ·</li>
+	   				<li><a href="">花的图片</a> ·</li>
+	   			</ul>
+   			</div>
+   			<div class="footer2">
+   				护花网(花卉网www.aihuhua.com) 这里是花儿成长的地方，聚焦亿万护花使者，同花儿一起茁壮成长！
+   			</div>
+   	    </div>
+   	</div>
+   	<!-- 二维码 -->
+    <div class="code">
+      <div class="androidcode">
+        <h2>安卓APP</h2>
+        <span></span>
+      </div>
+      <div class="guanfangcode">
+        <h2>官方网站</h2>
+        <span></span>
+      </div>
+      <div class="weixincode">
+        <h2>微信公众号</h2>
+        <span></span>
+      </div>
+    </div>
+    <!-- 回到顶部按钮 -->
+    <div class="huidaodingbu"> 
+    </div>
+    <!-- 登陆界面 -->
+    <div class="huisebox">
+    </div>
+    <div class="denglujiemian">
+        <div class="denglujiemian-header">
+            登陆护花网
+            <span>x</span>
+        </div>
+        <div class="denglujiemian-content">
+            <div class="dljm-left">
+                <h5>用以下账号直接登录</h5>
+                <div class="qq-xinlang-tunxun">
+                    <a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=qzone&addon=Login&hook=login_sync_other" target="_blank" class="qq">QQ账号登录</a>
+                    <a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=sina&addon=Login&hook=login_sync_other" target="_blank" class="sina">新浪微博登录</a>
+                    <a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=qq&addon=Login&hook=login_sync_other" target="_blank" class="tqq">腾讯微博登录</a>
+                </div>
+            </div>
+            <div class="dljm-right">
+                <p>还没有护花账号?<a href="http://www.aihuhua.com/register">立即注册</a></p>
+                <form>
+                    <div class="label">
+                        <label>邮箱</label>
+                        <input type="text">
+                    </div>
+                    <div class="label">
+                        <label>密码</label>
+                        <input type="password">
+                    </div>
+                    <span class="lock">
+                        <input type="checkbox" checked="checked">记住我
+                        <font class="line">|</font>
+                        <a href="http://www.aihuhua.com/index.php?app=public&mod=Passport&act=findPassword">忘记密码？</a>
+                    </span>
+                    <br>
+                    <a type="submit" class="dengluanniu">登录</a>
+                </form>
+            </div>
+            <div class="dljm-bottom">
+                <span>其他账号登录：</span>
+                <div class="third-party">
+                    <ul>
+                        <li><a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=sina&addon=Login&hook=login_sync_other" target="_blank" class="fangshi-sina"></a></li>
+                        <li><a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=qzone&addon=Login&hook=login_sync_other" target="_blank" class="fangshi-qq"></a></li>
+                        <li><a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=qq&addon=Login&hook=login_sync_other" target="_blank" class="fangshi-tunxun"></a></li>
+                        <li><a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=renren&addon=Login&hook=login_sync_other" target="_blank" class="fangshi-renren"></a></li>
+                        <li><a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=douban&addon=Login&hook=login_sync_other" target="_blank" class="fangshi-tudou"></a></li>
+                        <li><a href="http://www.aihuhua.com/index.php?app=public&mod=Widget&act=displayAddons&type=taobao&addon=Login&hook=login_sync_other" target="_blank" class="fangshi-taobao"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 悬浮小图标 -->
+    <div class="xuanfubox">
+        <a href="" class="xuanfu-wenxin"></a>
+        <a href="" class="xuanfu-qzone"></a>
+        <a href="" class="xuanfu-tsina"></a>
+        <a href="" class="xuanfu-tqq"></a>
+        <a href="" class="xuanfu-tieba"></a>
+        <a href="" class="xuanfu-kaixinwang"></a>
+        <a href="" class="xuanfu-renren"></a>
+        <a href="" class="xuanfu-douban"></a>
+        <a href="" class="xuanfu-huaban"></a>
+    </div>
+</body>
+</html>
